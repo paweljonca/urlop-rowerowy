@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Zaznacz wolne dni w kalendarzu i zobacz imprezy gravelowe, szosowe i MTB w Polsce, na które zdążysz.">
+<style>:root{color-scheme:light}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Kalendarz Szutrów i Szos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --bg:#F1F3EF; --surface:#FFFFFF; --surface-2:#E6EAE4; --line:#D3D9D1;
+  --ink:#18201C; --ink-2:#4A564F; --ink-3:#77837C;
+  --sel:#1F6F6A; --sel-soft:#CFE5E1; --sel-ink:#FFFFFF;
+  --road:#2E5C8A; --gravel:#A8661F; --mtb:#3D7A4E;
+  --today:#C8452B;
+  --display:"Barlow Condensed","Arial Narrow",system-ui,sans-serif;
+  --body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#131917; --surface:#1B2320; --surface-2:#232D29; --line:#33403A;
+    --ink:#E6ECE8; --ink-2:#B1BDB6; --ink-3:#83918A;
+    --sel:#4FB3A9; --sel-soft:#1E3F3B; --sel-ink:#0E1513;
+    --road:#7FA9D6; --gravel:#D9A05A; --mtb:#7DBB8C; --today:#F07A5F;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#131917; --surface:#1B2320; --surface-2:#232D29; --line:#33403A;
+  --ink:#E6ECE8; --ink-2:#B1BDB6; --ink-3:#83918A;
+  --sel:#4FB3A9; --sel-soft:#1E3F3B; --sel-ink:#0E1513;
+  --road:#7FA9D6; --gravel:#D9A05A; --mtb:#7DBB8C; --today:#F07A5F;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.5}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:20px;padding-block:28px 64px;display:grid;gap:28px}
+header{display:grid;gap:6px}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(34px,6vw,56px);line-height:.95;margin:0;letter-spacing:-.01em;text-wrap:balance}
+h1 span{color:var(--gravel)}
+.lead{margin:6px 0 0;max-width:62ch;color:var(--ink-2)}
+.note{font-size:13px;color:var(--ink-2);background:var(--surface-2);border-radius:8px;padding:8px 12px;max-width:max-content}
+.note b{color:var(--ink)}
+
+.layout{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:28px;align-items:start}
+@media (max-width:900px){.layout{grid-template-columns:1fr}}
+
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;display:grid;gap:16px}
+.cal-head{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.cal-head h2,.list-head h2{font-family:var(--display);font-weight:600;font-size:24px;margin:0;letter-spacing:.01em}
+.nav{display:flex;gap:6px}
+button{font:inherit;color:inherit;cursor:pointer}
+.btn{border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:6px 12px;font-size:14px}
+.btn:hover{background:var(--surface-2)}
+.btn:focus-visible,.day:focus-visible,.chip:focus-visible,.seg button:focus-visible{outline:2px solid var(--sel);outline-offset:2px}
+.icon-btn{width:36px;height:36px;padding:0;display:grid;place-items:center;font-size:18px}
+
+.months{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+@media (max-width:620px){.months{grid-template-columns:1fr}.months .month:nth-child(2){display:none}}
+.month h3{font-family:var(--display);font-weight:600;font-size:19px;margin:0 0 8px;text-transform:capitalize}
+.grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:3px;touch-action:none;user-select:none;-webkit-user-select:none}
+.dow{font-family:var(--mono);font-size:11px;color:var(--ink-3);text-align:center;padding-bottom:4px;text-transform:uppercase}
+.dow.we{color:var(--ink-2)}
+.day{position:relative;aspect-ratio:1/1;max-width:100%;border:0;border-radius:7px;background:var(--surface-2);font-family:var(--mono);font-size:13px;font-variant-numeric:tabular-nums;color:var(--ink);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;padding:0}
+.day:hover{box-shadow:inset 0 0 0 1.5px var(--sel)}
+.day.pad{background:transparent;pointer-events:none}
+.day.past{color:var(--ink-3);opacity:.55}
+.day.today{box-shadow:inset 0 0 0 1.5px var(--today)}
+.day.on{background:var(--sel);color:var(--sel-ink)}
+.dots{display:flex;gap:2px;height:4px}
+.dots i{width:4px;height:4px;border-radius:50%;display:block}
+.dots .road{background:var(--road)} .dots .gravel{background:var(--gravel)} .dots .mtb{background:var(--mtb)}
+.day.on .dots i{background:var(--sel-ink)}
+
+.cal-foot{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;justify-content:space-between;font-size:13px;color:var(--ink-2)}
+.legend{display:flex;gap:14px;flex-wrap:wrap}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.legend i{width:8px;height:8px;border-radius:50%;display:inline-block}
+.ranges{display:flex;flex-wrap:wrap;gap:6px}
+.range{font-family:var(--mono);font-size:12px;background:var(--sel-soft);color:var(--ink);border-radius:999px;padding:3px 4px 3px 10px;display:inline-flex;align-items:center;gap:4px}
+.range button{border:0;background:transparent;width:20px;height:20px;border-radius:50%;line-height:1;color:var(--ink-2)}
+.range button:hover{background:var(--surface)}
+.hint{font-size:13px;color:var(--ink-3);margin:0}
+
+.controls{display:grid;gap:10px}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.label{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);min-width:64px}
+.chip{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:4px 12px 4px 10px;font-size:13px;display:inline-flex;align-items:center;gap:7px}
+.chip i{width:8px;height:8px;border-radius:50%}
+.chip[aria-pressed="false"]{opacity:.5}
+.chip[aria-pressed="false"] i{background:transparent!important;box-shadow:inset 0 0 0 1.5px var(--ink-3)}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.seg button{border:0;background:var(--surface);padding:5px 12px;font-size:13px}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+
+.list-head{display:flex;align-items:baseline;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.count{font-family:var(--mono);font-size:13px;color:var(--ink-2)}
+.events{display:grid;gap:10px;list-style:none;margin:0;padding:0}
+.ev{display:grid;grid-template-columns:76px minmax(0,1fr);gap:14px;padding:14px;border-radius:12px;background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--c)}
+.ev.road{--c:var(--road)} .ev.gravel{--c:var(--gravel)} .ev.mtb{--c:var(--mtb)}
+.date{font-family:var(--display);line-height:1;display:grid;gap:2px;align-content:start}
+.date .d{font-size:28px;font-weight:700;font-variant-numeric:tabular-nums}
+.date .m{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-2)}
+.ev h4{margin:0;font-family:var(--display);font-size:21px;font-weight:600;line-height:1.1}
+.meta{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:13px;color:var(--ink-2);margin-top:4px}
+.meta .type{color:var(--c);font-weight:600}
+.dist{font-family:var(--mono);font-size:12px}
+.ev p{margin:6px 0 0;font-size:14px;color:var(--ink-2);max-width:62ch}
+.ev a{display:inline-block;margin-top:8px;font-size:13px;color:var(--sel);font-weight:500}
+.tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}.tags span{font-family:var(--mono);font-size:11px;background:var(--surface-2);border-radius:4px;padding:1px 6px;color:var(--ink-2)}
+footer a{color:inherit}
+.partial{font-family:var(--mono);font-size:11px;color:var(--today);margin-top:6px}
+.empty{padding:28px 18px;text-align:center;color:var(--ink-2);border:1px dashed var(--line);border-radius:12px}
+footer{font-size:12px;color:var(--ink-3)}
+@media (prefers-reduced-motion:no-preference){.day{transition:background .12s,color .12s}}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Szosa · gravel · MTB · imprezy w Polsce</div>
+    <h1>Kalendarz <span>szutrów</span> i szos</h1>
+    <p class="lead">Zaznacz na kalendarzu dni, w które masz wolne. Przeciągnij palcem lub myszą po kilku dniach, żeby zaznaczyć cały urlop. Poniżej zobaczysz imprezy, na które zdążysz.</p>
+    <div class="note" id="stan"></div>
+  </header>
+
+  <div class="layout">
+    <section class="panel" aria-label="Kalendarz">
+      <div class="cal-head">
+        <h2>Twoje wolne dni</h2>
+        <div class="nav">
+          <button class="btn icon-btn" id="prev" aria-label="Poprzedni miesiąc">‹</button>
+          <button class="btn" id="todayBtn">Dziś</button>
+          <button class="btn icon-btn" id="next" aria-label="Następny miesiąc">›</button>
+        </div>
+      </div>
+      <div class="months" id="months"></div>
+      <div class="cal-foot">
+        <div class="legend">
+          <span><i style="background:var(--road)"></i>szosa</span>
+          <span><i style="background:var(--gravel)"></i>gravel</span>
+          <span><i style="background:var(--mtb)"></i>MTB</span>
+        </div>
+        <button class="btn" id="clear">Wyczyść zaznaczenie</button>
+      </div>
+      <div class="ranges" id="ranges"></div>
+    </section>
+
+    <section class="panel" aria-label="Imprezy">
+      <div class="controls">
+        <div class="row">
+          <span class="label">Rodzaj</span>
+          <button class="chip" data-type="road" aria-pressed="true"><i style="background:var(--road)"></i>Szosa</button>
+          <button class="chip" data-type="gravel" aria-pressed="true"><i style="background:var(--gravel)"></i>Gravel</button>
+          <button class="chip" data-type="mtb" aria-pressed="true"><i style="background:var(--mtb)"></i>MTB</button>
+        </div>
+        <div class="row">
+          <span class="label">Pokaż</span>
+          <div class="seg" role="group" aria-label="Dopasowanie terminu">
+            <button id="modeFull" aria-pressed="true">Cała impreza w wolne</button>
+            <button id="modeAny" aria-pressed="false">Choć jeden dzień</button>
+          </div>
+        </div>
+      </div>
+      <div class="list-head">
+        <h2>Imprezy w Twoim terminie</h2>
+        <span class="count" id="count"></span>
+      </div>
+      <ul class="events" id="events"></ul>
+    </section>
+  </div>
+
+  <footer>Dane o imprezach pochodzą z serwisów <a href="https://gravelradar.cc/" target="_blank" rel="noopener">gravelradar.cc</a> i <a href="https://kalendarzrowerowy.pl/" target="_blank" rel="noopener">kalendarzrowerowy.pl</a>. Terminy mogą się zmienić, więc przed zapisami sprawdź stronę organizatora. Kalendarz pamięta zaznaczone dni w tej przeglądarce.</footer>
+</div>
+
+<script type="application/json" id="dane">{"updated":"2026-10-12","events":[{"name":"Grevet Roztocze 2026","types":["gravel"],"start":"2026-10-17","end":"2026-10-17","place":"Susiec","region":"lubelskie","dist":"160 km","tags":["grevet"],"url":"https://ultraraceseries.pl/grevet-roztocze-2/","src":["gravelradar.cc"]},{"name":"Robinsonada Pomorska","types":["gravel"],"start":"2026-10-17","end":"2026-10-18","place":"Gdańsk","region":"pomorskie","dist":"80 / 150 / 250 / 350 km","tags":[],"url":"https://robinsonada.com.pl","src":["gravelradar.cc","kalendarzrowerowy.pl"]},{"name":"Sowie gravelowe - grevet","types":["gravel","road"],"start":"2026-10-17","end":"2026-10-17","place":"Rzeczka","region":"dolnośląskie","dist":"100 km","tags":["brevet"],"url":"https://brevety.pl","src":["gravelradar.cc"]},{"name":"Wataha - Droga do Piekła 2026","types":["gravel"],"start":"2026-10-23","end":"2026-10-26","place":"Skarżysko-Kamienna","region":"świętokrzyskie","dist":null,"tags":[],"url":"https://watahaultrarace.pl","src":["gravelradar.cc"]},{"name":"Castle Race - Jesień 2026","types":["gravel"],"start":"2026-11-07","end":"2026-11-07","place":"Pomiechówek","region":"mazowieckie","dist":null,"tags":["ultra"],"url":"https://www.facebook.com/events/1621642333013011/?active_tab=about","src":["gravelradar.cc"]},{"name":"Prószkowski Gravel Cup","types":["gravel"],"start":"2026-11-11","end":"2026-11-11","place":"Prószków","region":"opolskie","dist":"60 / 120 km","tags":[],"url":"https://tomexgravel.pl/kontakt","src":["gravelradar.cc"]},{"name":"Przeciskacz - Piękny Yeti","types":["gravel"],"start":"2026-11-28","end":"2026-11-28","place":"Nędza","region":"śląskie","dist":null,"tags":["ultra"],"url":"https://www.przeciskacz.pl/","src":["gravelradar.cc"]},{"name":"Ultra Race Podlasie","types":["gravel"],"start":"2026-12-05","end":"2026-12-05","place":"Mielnik","region":"podlaskie","dist":"80 / 130 km","tags":[],"url":"https://ultraraceseries.pl/ultra-race-podlasie/","src":["gravelradar.cc","kalendarzrowerowy.pl"]},{"name":"Kontra Bolimowska","types":["gravel"],"start":"2027-04-03","end":"2027-04-03","place":"Skierniewice","region":"łódzkie","dist":"86 / 131 km","tags":[],"url":"https://ultravelo.pl/kontra","src":["gravelradar.cc"]},{"name":"Rozgrzewka Polish Bike Tour","types":["gravel"],"start":"2027-04-03","end":"2027-04-04","place":"Gliwice","region":"śląskie","dist":"100 / 200 / 300 / 500 km","tags":[],"url":"https://www.polishbiketour.pl/wydarzenia/rozgrzewka-gliwice-03-04-2027","src":["gravelradar.cc"]},{"name":"Mana Lake Adventure Gravel Race","types":["gravel"],"start":"2027-04-17","end":"2027-04-17","place":"Ławica k. Sierakowa","region":"wielkopolskie","dist":"55 / 110 km","tags":[],"url":"https://triathlonsierakow.pl/gravel-race/","src":["gravelradar.cc","kalendarzrowerowy.pl"]},{"name":"Orient Gravel – Mielnik „Nad Bugiem” 2027","types":["gravel"],"start":"2027-04-17","end":"2027-04-17","place":"Mielnik","region":"podlaskie","dist":"100 / 200 km","tags":[],"url":"https://www.orientgravel.pl/","src":["gravelradar.cc"]},{"name":"Wiosenne Szutry Premium","types":["gravel"],"start":"2027-04-17","end":"2027-04-17","place":"Wrocław","region":"dolnośląskie","dist":"100 / 200 km","tags":[],"url":"https://szutrypremium.pl/","src":["gravelradar.cc"]},{"name":"Po Grudzie Bike Race","types":["gravel"],"start":"2027-04-24","end":"2027-04-24","place":"Bogusławice","region":"łódzkie","dist":"120 / 220 / 300 km","tags":[],"url":"https://pogrudziebikerace.com/","src":["gravelradar.cc","kalendarzrowerowy.pl"]},{"name":"Polish Bike Tour Gryf","types":["gravel","road"],"start":"2027-05-01","end":"2027-05-01","place":"Szczecin","region":"zachodniopomorskie","dist":"150 / 250 km","tags":[],"url":"https://www.polishbiketour.pl/wydarzenia/gryf-szczecin-01-05-2027","src":["gravelradar.cc"]},{"name":"Ultra Race Roztocze","types":["gravel"],"start":"2027-05-07","end":"2027-05-09","place":"Susiec","region":"lubelskie","dist":"75 / 130 / 220 / 330 / 537 km","tags":[],"url":"https://ultraraceseries.pl/ultra-race-roztocze-2/","src":["gravelradar.cc","kalendarzrowerowy.pl"]},{"name":"Baltic Bike Challenge","types":["gravel"],"start":"2027-05-08","end":"2027-05-08","place":"Mikoszewo","region":"pomorskie","dist":"100 / 250 / 500 km","tags":[],"url":"https://ultravelo.pl/","src":["gravelradar.cc"]},{"name":"Przeciskacz","types":["gravel"],"start":"2027-05-10","end":"2027-05-14","place":"Nędza","region":"śląskie","dist":"350 / 410 / 700 km","tags":[],"url":"https://przeciskacz.pl/","src":["gravelradar.cc","kalendarzrowerowy.pl"]},{"name":"Hardy Gravel '27","types":["gravel"],"start":"2027-05-22","end":"2027-05-23","place":"Chotowa","region":"podkarpackie","dist":"100 / 300 / 600 km","tags":[],"url":"https://hardygravel.cc/rajdy/","src":["gravelradar.cc"]},{"name":"Przemyśl Gravel Tour","types":["gravel"],"start":"2027-05-22","end":"2027-05-22","place":"Przemyśl","region":"podkarpackie","dist":"80 km, 131 km, 206 km","tags":[],"url":"https://gravel.przemysltour.pl","src":["kalendarzrowerowy.pl"]},{"name":"Lakeland GRVL","types":["gravel"],"start":"2027-05-26","end":"2027-05-30","place":"Jeleniewo","region":"podlaskie","dist":"1100 km","tags":[],"url":"https://gravel.love/","src":["gravelradar.cc","kalendarzrowerowy.pl"]},{"name":"Pomorska 500 2027","types":["gravel"],"start":"2027-05-27","end":"2027-05-27","place":"Sopot","region":"pomorskie","dist":"500 km","tags":[],"url":"https://kolarstwoprzygodowe.pl/produkt/pakiet-startowy-pomorska-500-2026/","src":["gravelradar.cc"]},{"name":"Ultra Duch Puszczy","types":["gravel"],"start":"2027-05-27","end":"2027-05-30","place":"Hajnówka","region":"podlaskie","dist":"260 / 380 km","tags":[],"url":"https://ultraduchpuszczy.pl/","src":["gravelradar.cc"]},{"name":"Ultra Lajkonik","types":["gravel"],"start":"2027-05-27","end":"2027-06-03","place":"Bartkowa-Posadowa","region":"małopolskie","dist":"1000 km, 500 km, 250 km","tags":[],"url":"https://ultralajkonik.pl","src":["kalendarzrowerowy.pl"]},{"name":"Sudovia Gravel","types":["gravel"],"start":"2027-05-28","end":"2027-05-30","place":"Jeleniewo","region":"podlaskie","dist":"100 / 180 / 400 / 500 km","tags":[],"url":"https://sudovia.gravel.love/","src":["gravelradar.cc"]},{"name":"Ultra Duch Puszczy Szosa/Gravel","types":["gravel","road"],"start":"2027-05-28","end":"2027-05-30","place":"Hajnówka","region":"podlaskie","dist":"556 km, 383 km, 261 km, 274 km","tags":[],"url":"https://ultraduchpuszczy.pl/","src":["kalendarzrowerowy.pl"]},{"name":"Wanoga Gravel","types":["gravel"],"start":"2027-05-28","end":"2027-05-31","place":"Stężyca","region":"pomorskie","dist":"100 / 200 / 350 / 500 km","tags":[],"url":"https://wanogagravel.pl/","src":["gravelradar.cc"]},{"name":"Polish Bike Tour Góry 400","types":["gravel","road","mtb"],"start":"2027-06-05","end":"2027-06-09","place":"Żywiec","region":"śląskie","dist":"400 km","tags":[],"url":"https://www.polishbiketour.pl/wydarzenia/gory-400-zywiec-05-06-2027","src":["gravelradar.cc","kalendarzrowerowy.pl"]},{"name":"Mazowiecki Gravel 2027","types":["gravel"],"start":"2027-06-19","end":"2027-06-19","place":"Siedlce","region":"mazowieckie","dist":"80 / 120 / 200 / 500 km","tags":[],"url":"https://www.mazowieckigravel.pl/","src":["gravelradar.cc"]},{"name":"GravOn Flatland (Night Castle) 2027","types":["gravel"],"start":"2027-06-25","end":"2027-06-26","place":"Czersk","region":"mazowieckie","dist":"150 / 250 / 350 km","tags":[],"url":"https://www.gravon.pl/","src":["gravelradar.cc"]},{"name":"7 Rivers - Poland Divide","types":["gravel"],"start":"2027-06-26","end":"2027-06-30","place":"Kostrzyn nad Odrą","region":"lubuskie","dist":"850 km","tags":[],"url":"https://7rivers.pl/","src":["gravelradar.cc"]},{"name":"Robinsonada Dolnośląska","types":["gravel"],"start":"2027-06-26","end":"2027-06-27","place":"Wrocław","region":"dolnośląskie","dist":"80 / 150 / 250 / 350 km","tags":[],"url":"https://robinsonada.com.pl/","src":["gravelradar.cc","kalendarzrowerowy.pl"]},{"name":"Polish Bike Tour Wschód 1200","types":["gravel","road"],"start":"2027-07-03","end":"2027-07-10","place":"Sanok","region":"podkarpackie","dist":"1200 km","tags":[],"url":"https://www.polishbiketour.pl/wydarzenia/wschod-1200-sanok-03-07-2027","src":["gravelradar.cc","kalendarzrowerowy.pl"]},{"name":"Brejdak Gravel","types":["gravel"],"start":"2027-07-09","end":"2027-07-12","place":"Janów Lubelski","region":"lubelskie","dist":"100 / 200 / 350 / 500 km","tags":[],"url":"https://brejdakgravel.pl/","src":["gravelradar.cc","kalendarzrowerowy.pl"]},{"name":"Gravel Beskidzki","types":["gravel"],"start":"2027-07-10","end":"2027-07-10","place":"Radocyna","region":"małopolskie","dist":"93.3 km","tags":[],"url":"https://gravelbeskidzki.pl/","src":["gravelradar.cc","kalendarzrowerowy.pl"]},{"name":"Graveliada","types":["gravel"],"start":"2027-07-10","end":"2027-07-11","place":"Wikielec k. Iławy","region":"warmińsko-mazurskie","dist":"100 / 160 / 250 km","tags":[],"url":"https://graveliada.pl/","src":["gravelradar.cc","kalendarzrowerowy.pl"]},{"name":"Hardy Gravel - Perun","types":["gravel"],"start":"2027-07-17","end":"2027-07-19","place":"Wierzchosławice","region":"małopolskie","dist":"30 km","tags":[],"url":"https://hardygravel.cc/rajdy/","src":["gravelradar.cc"]},{"name":"Robinsonada Mazowiecka","types":["gravel"],"start":"2027-07-17","end":"2027-07-18","place":"Warszawa","region":"mazowieckie","dist":"80 / 150 / 250 / 350 km","tags":[],"url":"https://robinsonada.com.pl/","src":["gravelradar.cc"]},{"name":"Ultra Race 900","types":["gravel"],"start":"2027-07-21","end":"2027-07-25","place":"Mielnik","region":"podlaskie","dist":"900 km","tags":[],"url":"https://ultraraceseries.pl/ultra-race-900/","src":["gravelradar.cc"]},{"name":"Ultra Race Silesia","types":["gravel"],"start":"2027-07-24","end":"2027-07-25","place":"Tychy","region":"śląskie","dist":"165 / 320 km","tags":[],"url":"https://ultraraceseries.pl/ultra-race-silesia/","src":["gravelradar.cc"]},{"name":"Letnie Szutry Premium","types":["gravel"],"start":"2027-07-31","end":"2027-07-31","place":"Wrocław","region":"dolnośląskie","dist":"100 / 200 / 300 / 400 km","tags":[],"url":"https://szutrypremium.pl/","src":["gravelradar.cc"]},{"name":"PBT Wybrzeże 500","types":["gravel","mtb"],"start":"2027-07-31","end":"2027-07-31","place":"Sopot","region":"pomorskie","dist":"500 km","tags":[],"url":"https://www.polishbiketour.pl/pbt-news/zapisy-na-sezon-2027","src":["kalendarzrowerowy.pl"]},{"name":"Polish Bike Tour Bałtyk 600","types":["gravel","road"],"start":"2027-07-31","end":"2027-08-05","place":"Gdańsk / Sopot","region":"pomorskie","dist":"600 km","tags":[],"url":"https://www.polishbiketour.pl/wydarzenia/baltyk-600-gdansk-szczecin-31-07-2027","src":["gravelradar.cc","kalendarzrowerowy.pl"]},{"name":"Robinsonada Kujawsko-Pomorska","types":["gravel"],"start":"2027-08-07","end":"2027-08-08","place":"Toruń","region":"kujawsko-pomorskie","dist":"80 / 150 / 250 / 350 km","tags":[],"url":"https://robinsonada.com.pl/","src":["gravelradar.cc"]},{"name":"Warta Gravel 2027","types":["gravel"],"start":"2027-08-21","end":"2027-08-23","place":"Poznań","region":"wielkopolskie","dist":"160 / 250 / 404 km","tags":[],"url":"https://wartagravel.com/","src":["gravelradar.cc","kalendarzrowerowy.pl"]},{"name":"Robinsonada Łódzka","types":["gravel"],"start":"2027-09-04","end":"2027-09-05","place":"Łódź","region":"łódzkie","dist":"80 / 150 / 250 / 350 km","tags":[],"url":"https://robinsonada.com.pl/","src":["gravelradar.cc"]},{"name":"Reza Gravel 2027","types":["gravel"],"start":"2027-09-10","end":"2027-09-12","place":"Funka","region":"pomorskie","dist":"150 / 330 / 450 km","tags":["etapówka"],"url":"https://rezagravel.cc/","src":["gravelradar.cc"]},{"name":"Gravelowe Bezdroża 2027","types":["gravel"],"start":"2027-09-11","end":"2027-09-11","place":"Warszawa","region":"mazowieckie","dist":"80 / 150 / 200 km","tags":[],"url":"https://www.velostrefa.pl/gravelowe-bezdroza","src":["gravelradar.cc"]},{"name":"Orient Gravel – Augustów „Kanał Augustowski” 2027","types":["gravel"],"start":"2027-09-11","end":"2027-09-11","place":"Augustów","region":"podlaskie","dist":"100 / 200 km","tags":[],"url":"https://www.orientgravel.pl/","src":["gravelradar.cc"]},{"name":"Jesienne Szutry Premium","types":["gravel"],"start":"2027-09-25","end":"2027-09-25","place":"Wrocław","region":"dolnośląskie","dist":"100 / 200 km","tags":[],"url":"https://szutrypremium.pl/","src":["gravelradar.cc"]},{"name":"Robinsonada Wielkopolska","types":["gravel"],"start":"2027-09-25","end":"2027-09-26","place":"Poznań","region":"wielkopolskie","dist":"80 / 150 / 250 / 350 km","tags":[],"url":"https://robinsonada.com.pl/","src":["gravelradar.cc"]},{"name":"Hardy Gravel – Veles 2027","types":["gravel"],"start":"2027-09-26","end":"2027-09-26","place":"Niwiska","region":"podkarpackie","dist":"120 km","tags":[],"url":"https://hardygravel.cc/","src":["gravelradar.cc"]},{"name":"PBT: Rozjazd 2027","types":["gravel","road"],"start":"2027-10-02","end":"2027-10-02","place":"Gliwice","region":"śląskie","dist":"100 / 200 / 300 / 500 km","tags":["etapówka"],"url":"https://www.polishbiketour.pl/","src":["gravelradar.cc","kalendarzrowerowy.pl"]},{"name":"Robinsonada Pomorska","types":["gravel"],"start":"2027-10-16","end":"2027-10-17","place":"Gdańsk","region":"pomorskie","dist":"80 / 150 / 250 / 350 km","tags":[],"url":"https://robinsonada.com.pl/","src":["gravelradar.cc"]}]}</script>
+<script>
+const DATA = JSON.parse(document.getElementById("dane").textContent);
+const EVENTS = DATA.events;
+
+const TYPE_LABEL = {road:"Szosa",gravel:"Gravel",mtb:"MTB"};
+const MONTHS = ["styczeń","luty","marzec","kwiecień","maj","czerwiec","lipiec","sierpień","wrzesień","październik","listopad","grudzień"];
+const MONTHS_GEN = ["sty","lut","mar","kwi","maj","cze","lip","sie","wrz","paź","lis","gru"];
+const DOW = ["pn","wt","śr","cz","pt","so","nd"];
+const STORE = "kalendarz-rowerowy-v1";
+
+const pad = n => String(n).padStart(2,"0");
+const key = d => `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
+const parse = s => { const [y,m,d] = s.split("-").map(Number); return new Date(y,m-1,d); };
+const addDays = (d,n) => new Date(d.getFullYear(),d.getMonth(),d.getDate()+n);
+const today = new Date(); today.setHours(0,0,0,0);
+const todayKey = key(today);
+
+function daysOf(ev){ const out=[]; for(let d=parse(ev.start); key(d)<=ev.end; d=addDays(d,1)) out.push(key(d)); return out; }
+EVENTS.forEach(e => e.days = daysOf(e));
+const byDay = {};
+EVENTS.forEach(e => e.days.forEach(k => (byDay[k] ||= []).push(e)));
+
+const shown = e => e.types.some(t=>types.has(t));
+
+// stan
+let selected = new Set();
+let types = new Set(["road","gravel","mtb"]);
+let mode = "full";
+let view = new Date(today.getFullYear(), today.getMonth(), 1);
+
+function load(){
+  try{
+    const s = JSON.parse(localStorage.getItem(STORE) || "null");
+    if(s && Array.isArray(s.selected)){ selected = new Set(s.selected); if(s.mode) mode = s.mode; if(Array.isArray(s.types)) types = new Set(s.types); return true; }
+  }catch(e){}
+  return false;
+}
+function save(){
+  try{ localStorage.setItem(STORE, JSON.stringify({selected:[...selected],mode,types:[...types]})); }catch(e){}
+}
+if(!load()){
+  // przykładowy urlop: majówka 2027
+  for(let d=parse("2027-04-30"); key(d)<="2027-05-09"; d=addDays(d,1)) selected.add(key(d));
+}
+if(selected.size){ const first=[...selected].sort()[0]; const f=parse(first); view=new Date(f.getFullYear(),f.getMonth(),1); }
+
+// kalendarz
+const monthsEl = document.getElementById("months");
+function renderMonths(){
+  monthsEl.innerHTML = "";
+  for(let i=0;i<2;i++){
+    const m = new Date(view.getFullYear(), view.getMonth()+i, 1);
+    const box = document.createElement("div"); box.className="month";
+    box.innerHTML = `<h3>${MONTHS[m.getMonth()]} ${m.getFullYear()}</h3>`;
+    const grid = document.createElement("div"); grid.className="grid";
+    DOW.forEach((d,j)=>{ const el=document.createElement("div"); el.className="dow"+(j>4?" we":""); el.textContent=d; grid.appendChild(el); });
+    const lead = (m.getDay()+6)%7;
+    for(let p=0;p<lead;p++){ const el=document.createElement("div"); el.className="day pad"; grid.appendChild(el); }
+    const len = new Date(m.getFullYear(), m.getMonth()+1, 0).getDate();
+    for(let d=1; d<=len; d++){
+      const k = `${m.getFullYear()}-${pad(m.getMonth()+1)}-${pad(d)}`;
+      const b = document.createElement("button");
+      b.className = "day"; b.dataset.k = k;
+      if(k<todayKey) b.classList.add("past");
+      if(k===todayKey) b.classList.add("today");
+      if(selected.has(k)) b.classList.add("on");
+      b.setAttribute("aria-pressed", selected.has(k));
+      const evs = (byDay[k]||[]).filter(shown);
+      const kinds = ["road","gravel","mtb"].filter(t=>types.has(t)&&evs.some(e=>e.types.includes(t)));
+      b.setAttribute("aria-label", `${d} ${MONTHS_GEN[m.getMonth()]}${evs.length?`, imprez: ${evs.length}`:""}`);
+      b.innerHTML = `<span>${d}</span><span class="dots">${kinds.map(t=>`<i class="${t}"></i>`).join("")}</span>`;
+      grid.appendChild(b);
+    }
+    box.appendChild(grid); monthsEl.appendChild(box);
+  }
+}
+
+// zaznaczanie przeciąganiem
+let drag = null;
+function applyDrag(toK){
+  const [a,b] = [drag.from,toK].sort();
+  const range = []; for(let d=parse(a); key(d)<=b; d=addDays(d,1)) range.push(key(d));
+  selected = new Set(drag.base);
+  range.forEach(k => drag.add ? selected.add(k) : selected.delete(k));
+  monthsEl.querySelectorAll(".day[data-k]").forEach(el=>{
+    const on = selected.has(el.dataset.k); el.classList.toggle("on",on); el.setAttribute("aria-pressed",on);
+  });
+}
+monthsEl.addEventListener("pointerdown", e=>{
+  const el = e.target.closest(".day[data-k]"); if(!el) return;
+  e.preventDefault();
+  drag = {from:el.dataset.k, base:new Set(selected), add:!selected.has(el.dataset.k), last:el.dataset.k};
+  applyDrag(el.dataset.k);
+});
+window.addEventListener("pointermove", e=>{
+  if(!drag) return;
+  const el = document.elementFromPoint(e.clientX,e.clientY)?.closest?.(".day[data-k]");
+  if(el && el.dataset.k!==drag.last){ drag.last=el.dataset.k; applyDrag(el.dataset.k); }
+});
+window.addEventListener("pointerup", ()=>{ if(drag){ drag=null; commit(); } });
+window.addEventListener("pointercancel", ()=>{ if(drag){ drag=null; commit(); } });
+monthsEl.addEventListener("keydown", e=>{
+  const el = e.target.closest(".day[data-k]");
+  if(el && (e.key==="Enter"||e.key===" ")){
+    e.preventDefault(); const k=el.dataset.k;
+    selected.has(k)?selected.delete(k):selected.add(k); commit(); monthsEl.querySelector(`[data-k="${k}"]`)?.focus();
+  }
+});
+
+// zakresy jako etykiety
+function ranges(){
+  const ks=[...selected].sort(), out=[]; let s=null,p=null;
+  for(const k of ks){
+    if(s && key(addDays(parse(p),1))===k){ p=k; continue; }
+    if(s) out.push([s,p]); s=p=k;
+  }
+  if(s) out.push([s,p]);
+  return out;
+}
+function fmt(k){ const d=parse(k); return `${d.getDate()} ${MONTHS_GEN[d.getMonth()]}`; }
+function fmtRange(a,b){
+  const A=parse(a),B=parse(b);
+  if(a===b) return `${A.getDate()} ${MONTHS_GEN[A.getMonth()]} ${A.getFullYear()}`;
+  if(A.getMonth()===B.getMonth()&&A.getFullYear()===B.getFullYear()) return `${A.getDate()}–${B.getDate()} ${MONTHS_GEN[A.getMonth()]} ${A.getFullYear()}`;
+  return `${fmt(a)} – ${fmt(b)} ${B.getFullYear()}`;
+}
+const rangesEl = document.getElementById("ranges");
+function renderRanges(){
+  const r = ranges();
+  if(!r.length){ rangesEl.innerHTML = `<p class="hint">Kliknij dzień albo przeciągnij po kilku dniach, żeby zaznaczyć wolne.</p>`; return; }
+  rangesEl.innerHTML = r.map(([a,b])=>`<span class="range">${fmtRange(a,b)}<button data-a="${a}" data-b="${b}" aria-label="Usuń ${fmtRange(a,b)}">×</button></span>`).join("");
+}
+rangesEl.addEventListener("click", e=>{
+  const b = e.target.closest("button[data-a]"); if(!b) return;
+  for(let d=parse(b.dataset.a); key(d)<=b.dataset.b; d=addDays(d,1)) selected.delete(key(d));
+  commit();
+});
+
+// lista imprez
+const eventsEl = document.getElementById("events"), countEl = document.getElementById("count");
+function dateBlock(e){
+  const A=parse(e.start),B=parse(e.end);
+  const d = e.start===e.end ? A.getDate() : (A.getMonth()===B.getMonth() ? `${A.getDate()}–${B.getDate()}` : `${A.getDate()}–${B.getDate()}`);
+  const m = A.getMonth()===B.getMonth() ? `${MONTHS_GEN[A.getMonth()]} ${A.getFullYear()}` : `${MONTHS_GEN[A.getMonth()]}/${MONTHS_GEN[B.getMonth()]} ${B.getFullYear()}`;
+  return `<div class="date"><span class="d">${d}</span><span class="m">${m}</span></div>`;
+}
+function renderEvents(){
+  const list = EVENTS.filter(e=>{
+    if(!shown(e)) return false;
+    const hit = e.days.filter(k=>selected.has(k)).length;
+    return mode==="full" ? hit===e.days.length : hit>0;
+  }).sort((a,b)=>a.start.localeCompare(b.start));
+  countEl.textContent = selected.size ? `${list.length} ${plural(list.length,"impreza","imprezy","imprez")} · ${selected.size} ${plural(selected.size,"dzień","dni","dni")} wolnego` : "";
+  if(!selected.size){ eventsEl.innerHTML = `<li class="empty">Zaznacz na kalendarzu swoje wolne dni, a tu pojawią się pasujące imprezy.</li>`; return; }
+  if(!list.length){
+    eventsEl.innerHTML = `<li class="empty">W zaznaczonych dniach nie ma imprez${mode==="full"?" mieszczących się w całości. Spróbuj opcji „Choć jeden dzień”":""}${types.size<3?" albo włącz pozostałe rodzaje":""}.</li>`; return;
+  }
+  eventsEl.innerHTML = list.map(e=>{
+    const missing = e.days.filter(k=>!selected.has(k));
+    const link = /^https?:\/\//.test(e.url||"") ? `<a href="${esc(e.url)}" target="_blank" rel="noopener">Strona imprezy ↗</a>` : "";
+    return `<li class="ev ${e.types[0]}">
+      ${dateBlock(e)}
+      <div>
+        <h4>${esc(e.name)}</h4>
+        <div class="meta"><span class="type">${e.types.map(t=>TYPE_LABEL[t]).join(" + ")}</span><span>${esc([e.place,e.region].filter(Boolean).join(" · "))}</span>${e.dist?`<span class="dist">${esc(e.dist)}</span>`:""}</div>
+        ${e.tags&&e.tags.length?`<div class="tags">${e.tags.map(t=>`<span>${esc(t)}</span>`).join("")}</div>`:""}
+        ${missing.length?`<div class="partial">Poza Twoim wolnym: ${missing.map(fmt).join(", ")}</div>`:""}
+        ${link}
+      </div>
+    </li>`;
+  }).join("");
+}
+function esc(s){ return String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])); }
+function plural(n,one,few,many){ const t=n%10,h=n%100; if(n===1) return one; if(t>=2&&t<=4&&!(h>=12&&h<=14)) return few; return many; }
+
+function commit(){ save(); renderMonths(); renderRanges(); renderEvents(); }
+
+document.getElementById("prev").onclick = ()=>{ view=new Date(view.getFullYear(),view.getMonth()-1,1); renderMonths(); };
+document.getElementById("next").onclick = ()=>{ view=new Date(view.getFullYear(),view.getMonth()+1,1); renderMonths(); };
+document.getElementById("todayBtn").onclick = ()=>{ view=new Date(today.getFullYear(),today.getMonth(),1); renderMonths(); };
+document.getElementById("clear").onclick = ()=>{ selected.clear(); commit(); };
+document.querySelectorAll(".chip").forEach(c=>{
+  c.setAttribute("aria-pressed", types.has(c.dataset.type));
+  c.onclick = ()=>{ const t=c.dataset.type; types.has(t)?types.delete(t):types.add(t); c.setAttribute("aria-pressed",types.has(t)); commit(); };
+});
+const mFull=document.getElementById("modeFull"), mAny=document.getElementById("modeAny");
+function setMode(m){ mode=m; mFull.setAttribute("aria-pressed",m==="full"); mAny.setAttribute("aria-pressed",m==="any"); commit(); }
+mFull.onclick=()=>setMode("full"); mAny.onclick=()=>setMode("any");
+setMode(mode);
+document.getElementById("stan").innerHTML = EVENTS.length ? `<b>${EVENTS.length} ${plural(EVENTS.length,"impreza","imprezy","imprez")}</b> w kalendarzu · aktualizacja ${fmtRange(DATA.updated,DATA.updated)}` : "Brak danych o imprezach.";
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1002 @@
+{
+  "updated": "2026-10-12",
+  "events": [
+    {
+      "name": "Grevet Roztocze 2026",
+      "types": [
+        "gravel"
+      ],
+      "start": "2026-10-17",
+      "end": "2026-10-17",
+      "place": "Susiec",
+      "region": "lubelskie",
+      "dist": "160 km",
+      "tags": [
+        "grevet"
+      ],
+      "url": "https://ultraraceseries.pl/grevet-roztocze-2/",
+      "src": [
+        "gravelradar.cc"
+      ]
+    },
+    {
+      "name": "Robinsonada Pomorska",
+      "types": [
+        "gravel"
+      ],
+      "start": "2026-10-17",
+      "end": "2026-10-18",
+      "place": "Gdańsk",
+      "region": "pomorskie",
+      "dist": "80 / 150 / 250 / 350 km",
+      "tags": [
+
+      ],
+      "url": "https://robinsonada.com.pl",
+      "src": [
+        "gravelradar.cc",
+        "kalendarzrowerowy.pl"
+      ]
+    },
+    {
+      "name": "Sowie gravelowe - grevet",
+      "types": [
+        "gravel",
+        "road"
+      ],
+      "start": "2026-10-17",
+      "end": "2026-10-17",
+      "place": "Rzeczka",
+      "region": "dolnośląskie",
+      "dist": "100 km",
+      "tags": [
+        "brevet"
+      ],
+      "url": "https://brevety.pl",
+      "src": [
+        "gravelradar.cc"
+      ]
+    },
+    {
+      "name": "Wataha - Droga do Piekła 2026",
+      "types": [
+        "gravel"
+      ],
+      "start": "2026-10-23",
+      "end": "2026-10-26",
+      "place": "Skarżysko-Kamienna",
+      "region": "świętokrzyskie",
+      "dist": null,
+      "tags": [
+
+      ],
+      "url": "https://watahaultrarace.pl",
+      "src": [
+        "gravelradar.cc"
+      ]
+    },
+    {
+      "name": "Castle Race - Jesień 2026",
+      "types": [
+        "gravel"
+      ],
+      "start": "2026-11-07",
+      "end": "2026-11-07",
+      "place": "Pomiechówek",
+      "region": "mazowieckie",
+      "dist": null,
+      "tags": [
+        "ultra"
+      ],
+      "url": "https://www.facebook.com/events/1621642333013011/?active_tab=about",
+      "src": [
+        "gravelradar.cc"
+      ]
+    },
+    {
+      "name": "Prószkowski Gravel Cup",
+      "types": [
+        "gravel"
+      ],
+      "start": "2026-11-11",
+      "end": "2026-11-11",
+      "place": "Prószków",
+      "region": "opolskie",
+      "dist": "60 / 120 km",
+      "tags": [
+
+      ],
+      "url": "https://tomexgravel.pl/kontakt",
+      "src": [
+        "gravelradar.cc"
+      ]
+    },
+    {
+      "name": "Przeciskacz - Piękny Yeti",
+      "types": [
+        "gravel"
+      ],
+      "start": "2026-11-28",
+      "end": "2026-11-28",
+      "place": "Nędza",
+      "region": "śląskie",
+      "dist": null,
+      "tags": [
+        "ultra"
+      ],
+      "url": "https://www.przeciskacz.pl/",
+      "src": [
+        "gravelradar.cc"
+      ]
+    },
+    {
+      "name": "Ultra Race Podlasie",
+      "types": [
+        "gravel"
+      ],
+      "start": "2026-12-05",
+      "end": "2026-12-05",
+      "place": "Mielnik",
+      "region": "podlaskie",
+      "dist": "80 / 130 km",
+      "tags": [
+
+      ],
+      "url": "https://ultraraceseries.pl/ultra-race-podlasie/",
+      "src": [
+        "gravelradar.cc",
+        "kalendarzrowerowy.pl"
+      ]
+    },
+    {
+      "name": "Kontra Bolimowska",
+      "types": [
+        "gravel"
+      ],
+      "start": "2027-04-03",
+      "end": "2027-04-03",
+      "place": "Skierniewice",
+      "region": "łódzkie",
+      "dist": "86 / 131 km",
+      "tags": [
+
+      ],
+      "url": "https://ultravelo.pl/kontra",
+      "src": [
+        "gravelradar.cc"
+      ]
+    },
+    {
+      "name": "Rozgrzewka Polish Bike Tour",
+      "types": [
+        "gravel"
+      ],
+      "start": "2027-04-03",
+      "end": "2027-04-04",
+      "place": "Gliwice",
+      "region": "śląskie",
+      "dist": "100 / 200 / 300 / 500 km",
+      "tags": [
+
+      ],
+      "url": "https://www.polishbiketour.pl/wydarzenia/rozgrzewka-gliwice-03-04-2027",
+      "src": [
+        "gravelradar.cc"
+      ]
+    },
+    {
+      "name": "Mana Lake Adventure Gravel Race",
+      "types": [
+        "gravel"
+      ],
+      "start": "2027-04-17",
+      "end": "2027-04-17",
+      "place": "Ławica k. Sierakowa",
+      "region": "wielkopolskie",
+      "dist": "55 / 110 km",
+      "tags": [
+
+      ],
+      "url": "https://triathlonsierakow.pl/gravel-race/",
+      "src": [
+        "gravelradar.cc",
+        "kalendarzrowerowy.pl"
+      ]
+    },
+    {
+      "name": "Orient Gravel – Mielnik „Nad Bugiem” 2027",
+      "types": [
+        "gravel"
+      ],
+      "start": "2027-04-17",
+      "end": "2027-04-17",
+      "place": "Mielnik",
+      "region": "podlaskie",
+      "dist": "100 / 200 km",
+      "tags": [
+
+      ],
+      "url": "https://www.orientgravel.pl/",
+      "src": [
+        "gravelradar.cc"
+      ]
+    },
+    {
+      "name": "Wiosenne Szutry Premium",
+      "types": [
+        "gravel"
+      ],
+      "start": "2027-04-17",
+      "end": "2027-04-17",
+      "place": "Wrocław",
+      "region": "dolnośląskie",
+      "dist": "100 / 200 km",
+      "tags": [
+
+      ],
+      "url": "https://szutrypremium.pl/",
+      "src": [
+        "gravelradar.cc"
+      ]
+    },
+    {
+      "name": "Po Grudzie Bike Race",
+      "types": [
+        "gravel"
+      ],
+      "start": "2027-04-24",
+      "end": "2027-04-24",
+      "place": "Bogusławice",
+      "region": "łódzkie",
+      "dist": "120 / 220 / 300 km",
+      "tags": [
+
+      ],
+      "url": "https://pogrudziebikerace.com/",
+      "src": [
+        "gravelradar.cc",
+        "kalendarzrowerowy.pl"
+      ]
+    },
+    {
+      "name": "Polish Bike Tour Gryf",
+      "types": [
+        "gravel",
+        "road"
+      ],
+      "start": "2027-05-01",
+      "end": "2027-05-01",
+      "place": "Szczecin",
+      "region": "zachodniopomorskie",
+      "dist": "150 / 250 km",
+      "tags": [
+
+      ],
+      "url": "https://www.polishbiketour.pl/wydarzenia/gryf-szczecin-01-05-2027",
+      "src": [
+        "gravelradar.cc"
+      ]
+    },
+    {
+      "name": "Ultra Race Roztocze",
+      "types": [
+        "gravel"
+      ],
+      "start": "2027-05-07",
+      "end": "2027-05-09",
+      "place": "Susiec",
+      "region": "lubelskie",
+      "dist": "75 / 130 / 220 / 330 / 537 km",
+      "tags": [
+
+      ],
+      "url": "https://ultraraceseries.pl/ultra-race-roztocze-2/",
+      "src": [
+        "gravelradar.cc",
+        "kalendarzrowerowy.pl"
+      ]
+    },
+    {
+      "name": "Baltic Bike Challenge",
+      "types": [
+        "gravel"
+      ],
+      "start": "2027-05-08",
+      "end": "2027-05-08",
+      "place": "Mikoszewo",
+      "region": "pomorskie",
+      "dist": "100 / 250 / 500 km",
+      "tags": [
+
+      ],
+      "url": "https://ultravelo.pl/",
+      "src": [
+        "gravelradar.cc"
+      ]
+    },
+    {
+      "name": "Przeciskacz",
+      "types": [
+        "gravel"
+      ],
+      "start": "2027-05-10",
+      "end": "2027-05-14",
+      "place": "Nędza",
+      "region": "śląskie",
+      "dist": "350 / 410 / 700 km",
+      "tags": [
+
+      ],
+      "url": "https://przeciskacz.pl/",
+      "src": [
+        "gravelradar.cc",
+        "kalendarzrowerowy.pl"
+      ]
+    },
+    {
+      "name": "Hardy Gravel '27",
+      "types": [
+        "gravel"
+      ],
+      "start": "2027-05-22",
+      "end": "2027-05-23",
+      "place": "Chotowa",
+      "region": "podkarpackie",
+      "dist": "100 / 300 / 600 km",
+      "tags": [
+
+      ],
+      "url": "https://hardygravel.cc/rajdy/",
+      "src": [
+        "gravelradar.cc"
+      ]
+    },
+    {
+      "name": "Przemyśl Gravel Tour",
+      "types": [
+        "gravel"
+      ],
+      "start": "2027-05-22",
+      "end": "2027-05-22",
+      "place": "Przemyśl",
+      "region": "podkarpackie",
+      "dist": "80 km, 131 km, 206 km",
+      "tags": [
+
+      ],
+      "url": "https://gravel.przemysltour.pl",
+      "src": [
+        "kalendarzrowerowy.pl"
+      ]
+    },
+    {
+      "name": "Lakeland GRVL",
+      "types": [
+        "gravel"
+      ],
+      "start": "2027-05-26",
+      "end": "2027-05-30",
+      "place": "Jeleniewo",
+      "region": "podlaskie",
+      "dist": "1100 km",
+      "tags": [
+
+      ],
+      "url": "https://gravel.love/",
+      "src": [
+        "gravelradar.cc",
+        "kalendarzrowerowy.pl"
+      ]
+    },
+    {
+      "name": "Pomorska 500 2027",
+      "types": [
+        "gravel"
+      ],
+      "start": "2027-05-27",
+      "end": "2027-05-27",
+      "place": "Sopot",
+      "region": "pomorskie",
+      "dist": "500 km",
+      "tags": [
+
+      ],
+      "url": "https://kolarstwoprzygodowe.pl/produkt/pakiet-startowy-pomorska-500-2026/",
+      "src": [
+        "gravelradar.cc"
+      ]
+    },
+    {
+      "name": "Ultra Duch Puszczy",
+      "types": [
+        "gravel"
+      ],
+      "start": "2027-05-27",
+      "end": "2027-05-30",
+      "place": "Hajnówka",
+      "region": "podlaskie",
+      "dist": "260 / 380 km",
+      "tags": [
+
+      ],
+      "url": "https://ultraduchpuszczy.pl/",
+      "src": [
+        "gravelradar.cc"
+      ]
+    },
+    {
+      "name": "Ultra Lajkonik",
+      "types": [
+        "gravel"
+      ],
+      "start": "2027-05-27",
+      "end": "2027-06-03",
+      "place": "Bartkowa-Posadowa",
+      "region": "małopolskie",
+      "dist": "1000 km, 500 km, 250 km",
+      "tags": [
+
+      ],
+      "url": "https://ultralajkonik.pl",
+      "src": [
+        "kalendarzrowerowy.pl"
+      ]
+    },
+    {
+      "name": "Sudovia Gravel",
+      "types": [
+        "gravel"
+      ],
+      "start": "2027-05-28",
+      "end": "2027-05-30",
+      "place": "Jeleniewo",
+      "region": "podlaskie",
+      "dist": "100 / 180 / 400 / 500 km",
+      "tags": [
+
+      ],
+      "url": "https://sudovia.gravel.love/",
+      "src": [
+        "gravelradar.cc"
+      ]
+    },
+    {
+      "name": "Ultra Duch Puszczy Szosa/Gravel",
+      "types": [
+        "gravel",
+        "road"
+      ],
+      "start": "2027-05-28",
+      "end": "2027-05-30",
+      "place": "Hajnówka",
+      "region": "podlaskie",
+      "dist": "556 km, 383 km, 261 km, 274 km",
+      "tags": [
+
+      ],
+      "url": "https://ultraduchpuszczy.pl/",
+      "src": [
+        "kalendarzrowerowy.pl"
+      ]
+    },
+    {
+      "name": "Wanoga Gravel",
+      "types": [
+        "gravel"
+      ],
+      "start": "2027-05-28",
+      "end": "2027-05-31",
+      "place": "Stężyca",
+      "region": "pomorskie",
+      "dist": "100 / 200 / 350 / 500 km",
+      "tags": [
+
+      ],
+      "url": "https://wanogagravel.pl/",
+      "src": [
+        "gravelradar.cc"
+      ]
+    },
+    {
+      "name": "Polish Bike Tour Góry 400",
+      "types": [
+        "gravel",
+        "road",
+        "mtb"
+      ],
+      "start": "2027-06-05",
+      "end": "2027-06-09",
+      "place": "Żywiec",
+      "region": "śląskie",
+      "dist": "400 km",
+      "tags": [
+
+      ],
+      "url": "https://www.polishbiketour.pl/wydarzenia/gory-400-zywiec-05-06-2027",
+      "src": [
+        "gravelradar.cc",
+        "kalendarzrowerowy.pl"
+      ]
+    },
+    {
+      "name": "Mazowiecki Gravel 2027",
+      "types": [
+        "gravel"
+      ],
+      "start": "2027-06-19",
+      "end": "2027-06-19",
+      "place": "Siedlce",
+      "region": "mazowieckie",
+      "dist": "80 / 120 / 200 / 500 km",
+      "tags": [
+
+      ],
+      "url": "https://www.mazowieckigravel.pl/",
+      "src": [
+        "gravelradar.cc"
+      ]
+    },
+    {
+      "name": "GravOn Flatland (Night Castle) 2027",
+      "types": [
+        "gravel"
+      ],
+      "start": "2027-06-25",
+      "end": "2027-06-26",
+      "place": "Czersk",
+      "region": "mazowieckie",
+      "dist": "150 / 250 / 350 km",
+      "tags": [
+
+      ],
+      "url": "https://www.gravon.pl/",
+      "src": [
+        "gravelradar.cc"
+      ]
+    },
+    {
+      "name": "7 Rivers - Poland Divide",
+      "types": [
+        "gravel"
+      ],
+      "start": "2027-06-26",
+      "end": "2027-06-30",
+      "place": "Kostrzyn nad Odrą",
+      "region": "lubuskie",
+      "dist": "850 km",
+      "tags": [
+
+      ],
+      "url": "https://7rivers.pl/",
+      "src": [
+        "gravelradar.cc"
+      ]
+    },
+    {
+      "name": "Robinsonada Dolnośląska",
+      "types": [
+        "gravel"
+      ],
+      "start": "2027-06-26",
+      "end": "2027-06-27",
+      "place": "Wrocław",
+      "region": "dolnośląskie",
+      "dist": "80 / 150 / 250 / 350 km",
+      "tags": [
+
+      ],
+      "url": "https://robinsonada.com.pl/",
+      "src": [
+        "gravelradar.cc",
+        "kalendarzrowerowy.pl"
+      ]
+    },
+    {
+      "name": "Polish Bike Tour Wschód 1200",
+      "types": [
+        "gravel",
+        "road"
+      ],
+      "start": "2027-07-03",
+      "end": "2027-07-10",
+      "place": "Sanok",
+      "region": "podkarpackie",
+      "dist": "1200 km",
+      "tags": [
+
+      ],
+      "url": "https://www.polishbiketour.pl/wydarzenia/wschod-1200-sanok-03-07-2027",
+      "src": [
+        "gravelradar.cc",
+        "kalendarzrowerowy.pl"
+      ]
+    },
+    {
+      "name": "Brejdak Gravel",
+      "types": [
+        "gravel"
+      ],
+      "start": "2027-07-09",
+      "end": "2027-07-12",
+      "place": "Janów Lubelski",
+      "region": "lubelskie",
+      "dist": "100 / 200 / 350 / 500 km",
+      "tags": [
+
+      ],
+      "url": "https://brejdakgravel.pl/",
+      "src": [
+        "gravelradar.cc",
+        "kalendarzrowerowy.pl"
+      ]
+    },
+    {
+      "name": "Gravel Beskidzki",
+      "types": [
+        "gravel"
+      ],
+      "start": "2027-07-10",
+      "end": "2027-07-10",
+      "place": "Radocyna",
+      "region": "małopolskie",
+      "dist": "93.3 km",
+      "tags": [
+
+      ],
+      "url": "https://gravelbeskidzki.pl/",
+      "src": [
+        "gravelradar.cc",
+        "kalendarzrowerowy.pl"
+      ]
+    },
+    {
+      "name": "Graveliada",
+      "types": [
+        "gravel"
+      ],
+      "start": "2027-07-10",
+      "end": "2027-07-11",
+      "place": "Wikielec k. Iławy",
+      "region": "warmińsko-mazurskie",
+      "dist": "100 / 160 / 250 km",
+      "tags": [
+
+      ],
+      "url": "https://graveliada.pl/",
+      "src": [
+        "gravelradar.cc",
+        "kalendarzrowerowy.pl"
+      ]
+    },
+    {
+      "name": "Hardy Gravel - Perun",
+      "types": [
+        "gravel"
+      ],
+      "start": "2027-07-17",
+      "end": "2027-07-19",
+      "place": "Wierzchosławice",
+      "region": "małopolskie",
+      "dist": "30 km",
+      "tags": [
+
+      ],
+      "url": "https://hardygravel.cc/rajdy/",
+      "src": [
+        "gravelradar.cc"
+      ]
+    },
+    {
+      "name": "Robinsonada Mazowiecka",
+      "types": [
+        "gravel"
+      ],
+      "start": "2027-07-17",
+      "end": "2027-07-18",
+      "place": "Warszawa",
+      "region": "mazowieckie",
+      "dist": "80 / 150 / 250 / 350 km",
+      "tags": [
+
+      ],
+      "url": "https://robinsonada.com.pl/",
+      "src": [
+        "gravelradar.cc"
+      ]
+    },
+    {
+      "name": "Ultra Race 900",
+      "types": [
+        "gravel"
+      ],
+      "start": "2027-07-21",
+      "end": "2027-07-25",
+      "place": "Mielnik",
+      "region": "podlaskie",
+      "dist": "900 km",
+      "tags": [
+
+      ],
+      "url": "https://ultraraceseries.pl/ultra-race-900/",
+      "src": [
+        "gravelradar.cc"
+      ]
+    },
+    {
+      "name": "Ultra Race Silesia",
+      "types": [
+        "gravel"
+      ],
+      "start": "2027-07-24",
+      "end": "2027-07-25",
+      "place": "Tychy",
+      "region": "śląskie",
+      "dist": "165 / 320 km",
+      "tags": [
+
+      ],
+      "url": "https://ultraraceseries.pl/ultra-race-silesia/",
+      "src": [
+        "gravelradar.cc"
+      ]
+    },
+    {
+      "name": "Letnie Szutry Premium",
+      "types": [
+        "gravel"
+      ],
+      "start": "2027-07-31",
+      "end": "2027-07-31",
+      "place": "Wrocław",
+      "region": "dolnośląskie",
+      "dist": "100 / 200 / 300 / 400 km",
+      "tags": [
+
+      ],
+      "url": "https://szutrypremium.pl/",
+      "src": [
+        "gravelradar.cc"
+      ]
+    },
+    {
+      "name": "PBT Wybrzeże 500",
+      "types": [
+        "gravel",
+        "mtb"
+      ],
+      "start": "2027-07-31",
+      "end": "2027-07-31",
+      "place": "Sopot",
+      "region": "pomorskie",
+      "dist": "500 km",
+      "tags": [
+
+      ],
+      "url": "https://www.polishbiketour.pl/pbt-news/zapisy-na-sezon-2027",
+      "src": [
+        "kalendarzrowerowy.pl"
+      ]
+    },
+    {
+      "name": "Polish Bike Tour Bałtyk 600",
+      "types": [
+        "gravel",
+        "road"
+      ],
+      "start": "2027-07-31",
+      "end": "2027-08-05",
+      "place": "Gdańsk / Sopot",
+      "region": "pomorskie",
+      "dist": "600 km",
+      "tags": [
+
+      ],
+      "url": "https://www.polishbiketour.pl/wydarzenia/baltyk-600-gdansk-szczecin-31-07-2027",
+      "src": [
+        "gravelradar.cc",
+        "kalendarzrowerowy.pl"
+      ]
+    },
+    {
+      "name": "Robinsonada Kujawsko-Pomorska",
+      "types": [
+        "gravel"
+      ],
+      "start": "2027-08-07",
+      "end": "2027-08-08",
+      "place": "Toruń",
+      "region": "kujawsko-pomorskie",
+      "dist": "80 / 150 / 250 / 350 km",
+      "tags": [
+
+      ],
+      "url": "https://robinsonada.com.pl/",
+      "src": [
+        "gravelradar.cc"
+      ]
+    },
+    {
+      "name": "Warta Gravel 2027",
+      "types": [
+        "gravel"
+      ],
+      "start": "2027-08-21",
+      "end": "2027-08-23",
+      "place": "Poznań",
+      "region": "wielkopolskie",
+      "dist": "160 / 250 / 404 km",
+      "tags": [
+
+      ],
+      "url": "https://wartagravel.com/",
+      "src": [
+        "gravelradar.cc",
+        "kalendarzrowerowy.pl"
+      ]
+    },
+    {
+      "name": "Robinsonada Łódzka",
+      "types": [
+        "gravel"
+      ],
+      "start": "2027-09-04",
+      "end": "2027-09-05",
+      "place": "Łódź",
+      "region": "łódzkie",
+      "dist": "80 / 150 / 250 / 350 km",
+      "tags": [
+
+      ],
+      "url": "https://robinsonada.com.pl/",
+      "src": [
+        "gravelradar.cc"
+      ]
+    },
+    {
+      "name": "Reza Gravel 2027",
+      "types": [
+        "gravel"
+      ],
+      "start": "2027-09-10",
+      "end": "2027-09-12",
+      "place": "Funka",
+      "region": "pomorskie",
+      "dist": "150 / 330 / 450 km",
+      "tags": [
+        "etapówka"
+      ],
+      "url": "https://rezagravel.cc/",
+      "src": [
+        "gravelradar.cc"
+      ]
+    },
+    {
+      "name": "Gravelowe Bezdroża 2027",
+      "types": [
+        "gravel"
+      ],
+      "start": "2027-09-11",
+      "end": "2027-09-11",
+      "place": "Warszawa",
+      "region": "mazowieckie",
+      "dist": "80 / 150 / 200 km",
+      "tags": [
+
+      ],
+      "url": "https://www.velostrefa.pl/gravelowe-bezdroza",
+      "src": [
+        "gravelradar.cc"
+      ]
+    },
+    {
+      "name": "Orient Gravel – Augustów „Kanał Augustowski” 2027",
+      "types": [
+        "gravel"
+      ],
+      "start": "2027-09-11",
+      "end": "2027-09-11",
+      "place": "Augustów",
+      "region": "podlaskie",
+      "dist": "100 / 200 km",
+      "tags": [
+
+      ],
+      "url": "https://www.orientgravel.pl/",
+      "src": [
+        "gravelradar.cc"
+      ]
+    },
+    {
+      "name": "Jesienne Szutry Premium",
+      "types": [
+        "gravel"
+      ],
+      "start": "2027-09-25",
+      "end": "2027-09-25",
+      "place": "Wrocław",
+      "region": "dolnośląskie",
+      "dist": "100 / 200 km",
+      "tags": [
+
+      ],
+      "url": "https://szutrypremium.pl/",
+      "src": [
+        "gravelradar.cc"
+      ]
+    },
+    {
+      "name": "Robinsonada Wielkopolska",
+      "types": [
+        "gravel"
+      ],
+      "start": "2027-09-25",
+      "end": "2027-09-26",
+      "place": "Poznań",
+      "region": "wielkopolskie",
+      "dist": "80 / 150 / 250 / 350 km",
+      "tags": [
+
+      ],
+      "url": "https://robinsonada.com.pl/",
+      "src": [
+        "gravelradar.cc"
+      ]
+    },
+    {
+      "name": "Hardy Gravel – Veles 2027",
+      "types": [
+        "gravel"
+      ],
+      "start": "2027-09-26",
+      "end": "2027-09-26",
+      "place": "Niwiska",
+      "region": "podkarpackie",
+      "dist": "120 km",
+      "tags": [
+
+      ],
+      "url": "https://hardygravel.cc/",
+      "src": [
+        "gravelradar.cc"
+      ]
+    },
+    {
+      "name": "PBT: Rozjazd 2027",
+      "types": [
+        "gravel",
+        "road"
+      ],
+      "start": "2027-10-02",
+      "end": "2027-10-02",
+      "place": "Gliwice",
+      "region": "śląskie",
+      "dist": "100 / 200 / 300 / 500 km",
+      "tags": [
+        "etapówka"
+      ],
+      "url": "https://www.polishbiketour.pl/",
+      "src": [
+        "gravelradar.cc",
+        "kalendarzrowerowy.pl"
+      ]
+    },
+    {
+      "name": "Robinsonada Pomorska",
+      "types": [
+        "gravel"
+      ],
+      "start": "2027-10-16",
+      "end": "2027-10-17",
+      "place": "Gdańsk",
+      "region": "pomorskie",
+      "dist": "80 / 150 / 250 / 350 km",
+      "tags": [
+
+      ],
+      "url": "https://robinsonada.com.pl/",
+      "src": [
+        "gravelradar.cc"
+      ]
+    }
+  ]
+}
