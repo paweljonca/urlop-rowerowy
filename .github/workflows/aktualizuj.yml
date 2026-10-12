@@ -1,0 +1,27 @@
+name: Aktualizacja imprez
+
+on:
+  schedule:
+    - cron: "15 3 * * *"   # codziennie ok. 5:15 czasu polskiego
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  aktualizuj:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+      - name: Pobierz imprezy
+        run: ruby aktualizuj.rb
+      - name: Zapisz zmiany
+        run: |
+          git config user.name "kalendarz-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add index.html imprezy.json
+          git diff --cached --quiet || git commit -m "Aktualizacja imprez $(date +%F)"
+          git push
