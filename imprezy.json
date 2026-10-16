@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-15",
+  "updated": "2026-10-16",
   "events": [
     {
       "name": "Grevet Roztocze 2026",
@@ -53,6 +53,24 @@
         "brevet"
       ],
       "url": "https://brevety.pl",
+      "src": [
+        "gravelradar.cc"
+      ]
+    },
+    {
+      "name": "Gravelowisko Coffee Ride 2026",
+      "types": [
+        "gravel"
+      ],
+      "start": "2026-10-18",
+      "end": "2026-10-18",
+      "place": "Lublin",
+      "region": "lubelskie",
+      "dist": "47 km",
+      "tags": [
+        "coffee ride"
+      ],
+      "url": "https://gravelowisko.pl/",
       "src": [
         "gravelradar.cc"
       ]
@@ -240,6 +258,24 @@
       ]
     },
     {
+      "name": "Zimny Gravel 2027",
+      "types": [
+        "gravel"
+      ],
+      "start": "2027-04-23",
+      "end": "2027-04-24",
+      "place": "Podborsko",
+      "region": "zachodniopomorskie",
+      "dist": "80 / 170 / 360 km",
+      "tags": [
+
+      ],
+      "url": "https://gravelowagonka.pl/",
+      "src": [
+        "gravelradar.cc"
+      ]
+    },
+    {
       "name": "Po Grudzie Bike Race",
       "types": [
         "gravel"
@@ -248,7 +284,7 @@
       "end": "2027-04-24",
       "place": "Bogusławice",
       "region": "łódzkie",
-      "dist": "120 / 220 / 300 km",
+      "dist": "100 / 200 / 300 km",
       "tags": [
 
       ],
@@ -310,6 +346,24 @@
 
       ],
       "url": "https://ultravelo.pl/",
+      "src": [
+        "gravelradar.cc"
+      ]
+    },
+    {
+      "name": "Orient Gravel – Krynki „Szlak Tatarski” 2027",
+      "types": [
+        "gravel"
+      ],
+      "start": "2027-05-08",
+      "end": "2027-05-08",
+      "place": "Krynki",
+      "region": "podlaskie",
+      "dist": "100 / 200 km",
+      "tags": [
+
+      ],
+      "url": "https://www.orientgravel.pl/",
       "src": [
         "gravelradar.cc"
       ]
@@ -816,6 +870,24 @@
       ]
     },
     {
+      "name": "Orient Gravel – Gołdap – Mazurski Zdrój 2027",
+      "types": [
+        "gravel"
+      ],
+      "start": "2027-08-14",
+      "end": "2027-08-14",
+      "place": "Gołdap",
+      "region": "warmińsko-mazurskie",
+      "dist": "100 / 200 km",
+      "tags": [
+
+      ],
+      "url": "https://www.orientgravel.pl/",
+      "src": [
+        "gravelradar.cc"
+      ]
+    },
+    {
       "name": "Warta Gravel 2027",
       "types": [
         "gravel"
@@ -956,6 +1028,24 @@
 
       ],
       "url": "https://hardygravel.cc/",
+      "src": [
+        "gravelradar.cc"
+      ]
+    },
+    {
+      "name": "Gravelowisko 2027",
+      "types": [
+        "gravel"
+      ],
+      "start": "2027-10-02",
+      "end": "2027-10-02",
+      "place": "Lublin",
+      "region": "lubelskie",
+      "dist": "60 / 120 km",
+      "tags": [
+
+      ],
+      "url": null,
       "src": [
         "gravelradar.cc"
       ]
