@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-21",
+  "updated": "2026-10-22",
   "events": [
     {
       "name": "Wataha - Droga do Piekła 2026",
@@ -267,7 +267,7 @@
       "end": "2027-05-08",
       "place": "Mikoszewo",
       "region": "pomorskie",
-      "dist": "100 / 250 / 500 km",
+      "dist": "150 / 250 / 500 km",
       "tags": [
 
       ],
@@ -499,6 +499,24 @@
       ]
     },
     {
+      "name": "Włóczęga Gravel 2027",
+      "types": [
+        "gravel"
+      ],
+      "start": "2027-06-12",
+      "end": "2027-06-13",
+      "place": "Leszno",
+      "region": "mazowieckie",
+      "dist": "100 / 200 / 300 km",
+      "tags": [
+
+      ],
+      "url": "http://www.wloczegagravel.pl/",
+      "src": [
+        "gravelradar.cc"
+      ]
+    },
+    {
       "name": "Mazowiecki Gravel 2027",
       "types": [
         "gravel"
@@ -589,6 +607,24 @@
       "src": [
         "gravelradar.cc",
         "kalendarzrowerowy.pl"
+      ]
+    },
+    {
+      "name": "Wiatrakowy Gravel Race vol. 4",
+      "types": [
+        "gravel"
+      ],
+      "start": "2027-07-03",
+      "end": "2027-07-03",
+      "place": "Wąbrzeźno",
+      "region": "kujawsko-pomorskie",
+      "dist": "100 / 160 / 250 km",
+      "tags": [
+
+      ],
+      "url": "https://miastoaktywni.pl/",
+      "src": [
+        "gravelradar.cc"
       ]
     },
     {
