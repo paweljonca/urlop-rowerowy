@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-24",
+  "updated": "2026-10-25",
   "events": [
     {
       "name": "Wataha - Droga do Piekła 2026",
@@ -17,6 +17,24 @@
       "url": "https://watahaultrarace.pl",
       "src": [
         "gravelradar.cc"
+      ]
+    },
+    {
+      "name": "Brevet Niepodległa",
+      "types": [
+        "gravel"
+      ],
+      "start": "2026-11-07",
+      "end": "2026-11-07",
+      "place": "Kórnik",
+      "region": "wielkopolskie",
+      "dist": "108 km, 45 km",
+      "tags": [
+
+      ],
+      "url": "https://fb.me/e/6KgT6E81u",
+      "src": [
+        "kalendarzrowerowy.pl"
       ]
     },
     {
@@ -166,7 +184,7 @@
       ]
     },
     {
-      "name": "Wiosenne Szutry Premium",
+      "name": "Wiosenne Szutry P*****m",
       "types": [
         "gravel"
       ],
@@ -328,7 +346,8 @@
       ],
       "url": "https://hardygravel.cc/rajdy/",
       "src": [
-        "gravelradar.cc"
+        "gravelradar.cc",
+        "kalendarzrowerowy.pl"
       ]
     },
     {
@@ -425,7 +444,8 @@
     {
       "name": "Sudovia Gravel",
       "types": [
-        "gravel"
+        "gravel",
+        "road"
       ],
       "start": "2027-05-28",
       "end": "2027-05-30",
@@ -437,7 +457,8 @@
       ],
       "url": "https://sudovia.gravel.love/",
       "src": [
-        "gravelradar.cc"
+        "gravelradar.cc",
+        "kalendarzrowerowy.pl"
       ]
     },
     {
@@ -699,7 +720,8 @@
       ],
       "url": "https://hardygravel.cc/rajdy/",
       "src": [
-        "gravelradar.cc"
+        "gravelradar.cc",
+        "kalendarzrowerowy.pl"
       ]
     },
     {
@@ -757,7 +779,7 @@
       ]
     },
     {
-      "name": "Letnie Szutry Premium",
+      "name": "Letnie Szutry P*****m",
       "types": [
         "gravel"
       ],
@@ -941,7 +963,7 @@
       ]
     },
     {
-      "name": "Jesienne Szutry Premium",
+      "name": "Jesienne Szutry P*****m",
       "types": [
         "gravel"
       ],
