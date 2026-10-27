@@ -1,24 +1,6 @@
 {
-  "updated": "2026-10-26",
+  "updated": "2026-10-27",
   "events": [
-    {
-      "name": "Wataha - Droga do Piekła 2026",
-      "types": [
-        "gravel"
-      ],
-      "start": "2026-10-23",
-      "end": "2026-10-26",
-      "place": "Skarżysko-Kamienna",
-      "region": "świętokrzyskie",
-      "dist": null,
-      "tags": [
-
-      ],
-      "url": "https://watahaultrarace.pl",
-      "src": [
-        "gravelradar.cc"
-      ]
-    },
     {
       "name": "Brevet Niepodległa",
       "types": [
