@@ -1,24 +1,6 @@
 {
-  "updated": "2026-10-27",
+  "updated": "2026-10-28",
   "events": [
-    {
-      "name": "Brevet Niepodległa",
-      "types": [
-        "gravel"
-      ],
-      "start": "2026-11-07",
-      "end": "2026-11-07",
-      "place": "Kórnik",
-      "region": "wielkopolskie",
-      "dist": "108 km, 45 km",
-      "tags": [
-
-      ],
-      "url": "https://fb.me/e/6KgT6E81u",
-      "src": [
-        "kalendarzrowerowy.pl"
-      ]
-    },
     {
       "name": "Castle Race - Jesień 2026",
       "types": [
@@ -88,8 +70,7 @@
       ],
       "url": "https://ultraraceseries.pl/ultra-race-podlasie/",
       "src": [
-        "gravelradar.cc",
-        "kalendarzrowerowy.pl"
+        "gravelradar.cc"
       ]
     },
     {
@@ -143,8 +124,7 @@
       ],
       "url": "https://triathlonsierakow.pl/gravel-race/",
       "src": [
-        "gravelradar.cc",
-        "kalendarzrowerowy.pl"
+        "gravelradar.cc"
       ]
     },
     {
@@ -216,8 +196,7 @@
       ],
       "url": "https://pogrudziebikerace.com/",
       "src": [
-        "gravelradar.cc",
-        "kalendarzrowerowy.pl"
+        "gravelradar.cc"
       ]
     },
     {
@@ -254,8 +233,7 @@
       ],
       "url": "https://ultraraceseries.pl/ultra-race-roztocze-2/",
       "src": [
-        "gravelradar.cc",
-        "kalendarzrowerowy.pl"
+        "gravelradar.cc"
       ]
     },
     {
@@ -309,8 +287,7 @@
       ],
       "url": "https://przeciskacz.pl/",
       "src": [
-        "gravelradar.cc",
-        "kalendarzrowerowy.pl"
+        "gravelradar.cc"
       ]
     },
     {
@@ -328,26 +305,7 @@
       ],
       "url": "https://hardygravel.cc/rajdy/",
       "src": [
-        "gravelradar.cc",
-        "kalendarzrowerowy.pl"
-      ]
-    },
-    {
-      "name": "Przemyśl Gravel Tour",
-      "types": [
-        "gravel"
-      ],
-      "start": "2027-05-22",
-      "end": "2027-05-22",
-      "place": "Przemyśl",
-      "region": "podkarpackie",
-      "dist": "80 km, 131 km, 206 km",
-      "tags": [
-
-      ],
-      "url": "https://gravel.przemysltour.pl",
-      "src": [
-        "kalendarzrowerowy.pl"
+        "gravelradar.cc"
       ]
     },
     {
@@ -365,8 +323,7 @@
       ],
       "url": "https://gravel.love/",
       "src": [
-        "gravelradar.cc",
-        "kalendarzrowerowy.pl"
+        "gravelradar.cc"
       ]
     },
     {
@@ -406,28 +363,9 @@
       ]
     },
     {
-      "name": "Ultra Lajkonik",
-      "types": [
-        "gravel"
-      ],
-      "start": "2027-05-27",
-      "end": "2027-06-03",
-      "place": "Bartkowa-Posadowa",
-      "region": "małopolskie",
-      "dist": "1000 km, 500 km, 250 km",
-      "tags": [
-
-      ],
-      "url": "https://ultralajkonik.pl",
-      "src": [
-        "kalendarzrowerowy.pl"
-      ]
-    },
-    {
       "name": "Sudovia Gravel",
       "types": [
-        "gravel",
-        "road"
+        "gravel"
       ],
       "start": "2027-05-28",
       "end": "2027-05-30",
@@ -439,27 +377,7 @@
       ],
       "url": "https://sudovia.gravel.love/",
       "src": [
-        "gravelradar.cc",
-        "kalendarzrowerowy.pl"
-      ]
-    },
-    {
-      "name": "Ultra Duch Puszczy Szosa/Gravel",
-      "types": [
-        "gravel",
-        "road"
-      ],
-      "start": "2027-05-28",
-      "end": "2027-05-30",
-      "place": "Hajnówka",
-      "region": "podlaskie",
-      "dist": "556 km, 383 km, 261 km, 274 km",
-      "tags": [
-
-      ],
-      "url": "https://ultraduchpuszczy.pl/",
-      "src": [
-        "kalendarzrowerowy.pl"
+        "gravelradar.cc"
       ]
     },
     {
@@ -484,8 +402,7 @@
       "name": "Polish Bike Tour Góry 400",
       "types": [
         "gravel",
-        "road",
-        "mtb"
+        "road"
       ],
       "start": "2027-06-05",
       "end": "2027-06-09",
@@ -497,8 +414,7 @@
       ],
       "url": "https://www.polishbiketour.pl/wydarzenia/gory-400-zywiec-05-06-2027",
       "src": [
-        "gravelradar.cc",
-        "kalendarzrowerowy.pl"
+        "gravelradar.cc"
       ]
     },
     {
@@ -588,8 +504,7 @@
       ],
       "url": "https://robinsonada.com.pl/",
       "src": [
-        "gravelradar.cc",
-        "kalendarzrowerowy.pl"
+        "gravelradar.cc"
       ]
     },
     {
@@ -608,8 +523,7 @@
       ],
       "url": "https://www.polishbiketour.pl/wydarzenia/wschod-1200-sanok-03-07-2027",
       "src": [
-        "gravelradar.cc",
-        "kalendarzrowerowy.pl"
+        "gravelradar.cc"
       ]
     },
     {
@@ -645,8 +559,7 @@
       ],
       "url": "https://brejdakgravel.pl/",
       "src": [
-        "gravelradar.cc",
-        "kalendarzrowerowy.pl"
+        "gravelradar.cc"
       ]
     },
     {
@@ -664,8 +577,7 @@
       ],
       "url": "https://gravelbeskidzki.pl/",
       "src": [
-        "gravelradar.cc",
-        "kalendarzrowerowy.pl"
+        "gravelradar.cc"
       ]
     },
     {
@@ -683,8 +595,7 @@
       ],
       "url": "https://graveliada.pl/",
       "src": [
-        "gravelradar.cc",
-        "kalendarzrowerowy.pl"
+        "gravelradar.cc"
       ]
     },
     {
@@ -702,8 +613,7 @@
       ],
       "url": "https://hardygravel.cc/rajdy/",
       "src": [
-        "gravelradar.cc",
-        "kalendarzrowerowy.pl"
+        "gravelradar.cc"
       ]
     },
     {
@@ -779,25 +689,6 @@
       ]
     },
     {
-      "name": "PBT Wybrzeże 500",
-      "types": [
-        "gravel",
-        "mtb"
-      ],
-      "start": "2027-07-31",
-      "end": "2027-07-31",
-      "place": "Sopot",
-      "region": "pomorskie",
-      "dist": "500 km",
-      "tags": [
-
-      ],
-      "url": "https://www.polishbiketour.pl/pbt-news/zapisy-na-sezon-2027",
-      "src": [
-        "kalendarzrowerowy.pl"
-      ]
-    },
-    {
       "name": "Polish Bike Tour Bałtyk 600",
       "types": [
         "gravel",
@@ -813,8 +704,7 @@
       ],
       "url": "https://www.polishbiketour.pl/wydarzenia/baltyk-600-gdansk-szczecin-31-07-2027",
       "src": [
-        "gravelradar.cc",
-        "kalendarzrowerowy.pl"
+        "gravelradar.cc"
       ]
     },
     {
@@ -868,8 +758,7 @@
       ],
       "url": "https://wartagravel.com/",
       "src": [
-        "gravelradar.cc",
-        "kalendarzrowerowy.pl"
+        "gravelradar.cc"
       ]
     },
     {
@@ -1019,8 +908,7 @@
     {
       "name": "PBT: Rozjazd 2027",
       "types": [
-        "gravel",
-        "road"
+        "gravel"
       ],
       "start": "2027-10-02",
       "end": "2027-10-02",
@@ -1032,8 +920,7 @@
       ],
       "url": "https://www.polishbiketour.pl/",
       "src": [
-        "gravelradar.cc",
-        "kalendarzrowerowy.pl"
+        "gravelradar.cc"
       ]
     },
     {
