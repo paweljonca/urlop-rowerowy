@@ -1,6 +1,24 @@
 {
-  "updated": "2026-10-28",
+  "updated": "2026-10-29",
   "events": [
+    {
+      "name": "Brevet Niepodległa",
+      "types": [
+        "gravel"
+      ],
+      "start": "2026-11-07",
+      "end": "2026-11-07",
+      "place": "Kórnik",
+      "region": "wielkopolskie",
+      "dist": "108 km, 45 km",
+      "tags": [
+
+      ],
+      "url": "https://fb.me/e/6KgT6E81u",
+      "src": [
+        "kalendarzrowerowy.pl"
+      ]
+    },
     {
       "name": "Castle Race - Jesień 2026",
       "types": [
@@ -70,6 +88,43 @@
       ],
       "url": "https://ultraraceseries.pl/ultra-race-podlasie/",
       "src": [
+        "gravelradar.cc",
+        "kalendarzrowerowy.pl"
+      ]
+    },
+    {
+      "name": "Wataha Ultra Race - Zima 2027",
+      "types": [
+        "gravel"
+      ],
+      "start": "2027-01-22",
+      "end": "2027-01-24",
+      "place": "Skarżysko-Kamienna",
+      "region": "świętokrzyskie",
+      "dist": null,
+      "tags": [
+
+      ],
+      "url": "https://watahaultrarace.pl/",
+      "src": [
+        "gravelradar.cc"
+      ]
+    },
+    {
+      "name": "Wataha Ultra Race - Wiosna 2027",
+      "types": [
+        "gravel"
+      ],
+      "start": "2027-03-19",
+      "end": "2027-03-21",
+      "place": "Skarżysko-Kamienna",
+      "region": "świętokrzyskie",
+      "dist": null,
+      "tags": [
+
+      ],
+      "url": "https://watahaultrarace.pl/",
+      "src": [
         "gravelradar.cc"
       ]
     },
@@ -110,6 +165,24 @@
       ]
     },
     {
+      "name": "GLPK Gravel 2027",
+      "types": [
+        "gravel"
+      ],
+      "start": "2027-04-16",
+      "end": "2027-04-18",
+      "place": "Ruda",
+      "region": "kujawsko-pomorskie",
+      "dist": "80 km",
+      "tags": [
+
+      ],
+      "url": "https://glpkgravel.pl/",
+      "src": [
+        "gravelradar.cc"
+      ]
+    },
+    {
       "name": "Mana Lake Adventure Gravel Race",
       "types": [
         "gravel"
@@ -124,7 +197,8 @@
       ],
       "url": "https://triathlonsierakow.pl/gravel-race/",
       "src": [
-        "gravelradar.cc"
+        "gravelradar.cc",
+        "kalendarzrowerowy.pl"
       ]
     },
     {
@@ -146,7 +220,7 @@
       ]
     },
     {
-      "name": "Wiosenne Szutry P*****m",
+      "name": "Wiosenne Szutry Premium",
       "types": [
         "gravel"
       ],
@@ -196,7 +270,8 @@
       ],
       "url": "https://pogrudziebikerace.com/",
       "src": [
-        "gravelradar.cc"
+        "gravelradar.cc",
+        "kalendarzrowerowy.pl"
       ]
     },
     {
@@ -233,7 +308,8 @@
       ],
       "url": "https://ultraraceseries.pl/ultra-race-roztocze-2/",
       "src": [
-        "gravelradar.cc"
+        "gravelradar.cc",
+        "kalendarzrowerowy.pl"
       ]
     },
     {
@@ -287,7 +363,8 @@
       ],
       "url": "https://przeciskacz.pl/",
       "src": [
-        "gravelradar.cc"
+        "gravelradar.cc",
+        "kalendarzrowerowy.pl"
       ]
     },
     {
@@ -305,7 +382,26 @@
       ],
       "url": "https://hardygravel.cc/rajdy/",
       "src": [
-        "gravelradar.cc"
+        "gravelradar.cc",
+        "kalendarzrowerowy.pl"
+      ]
+    },
+    {
+      "name": "Przemyśl Gravel Tour",
+      "types": [
+        "gravel"
+      ],
+      "start": "2027-05-22",
+      "end": "2027-05-22",
+      "place": "Przemyśl",
+      "region": "podkarpackie",
+      "dist": "80 km, 131 km, 206 km",
+      "tags": [
+
+      ],
+      "url": "https://gravel.przemysltour.pl",
+      "src": [
+        "kalendarzrowerowy.pl"
       ]
     },
     {
@@ -323,7 +419,8 @@
       ],
       "url": "https://gravel.love/",
       "src": [
-        "gravelradar.cc"
+        "gravelradar.cc",
+        "kalendarzrowerowy.pl"
       ]
     },
     {
@@ -363,9 +460,28 @@
       ]
     },
     {
-      "name": "Sudovia Gravel",
+      "name": "Ultra Lajkonik",
       "types": [
         "gravel"
+      ],
+      "start": "2027-05-27",
+      "end": "2027-06-03",
+      "place": "Bartkowa-Posadowa",
+      "region": "małopolskie",
+      "dist": "1000 km, 500 km, 250 km",
+      "tags": [
+
+      ],
+      "url": "https://ultralajkonik.pl",
+      "src": [
+        "kalendarzrowerowy.pl"
+      ]
+    },
+    {
+      "name": "Sudovia Gravel",
+      "types": [
+        "gravel",
+        "road"
       ],
       "start": "2027-05-28",
       "end": "2027-05-30",
@@ -377,7 +493,27 @@
       ],
       "url": "https://sudovia.gravel.love/",
       "src": [
-        "gravelradar.cc"
+        "gravelradar.cc",
+        "kalendarzrowerowy.pl"
+      ]
+    },
+    {
+      "name": "Ultra Duch Puszczy Szosa/Gravel",
+      "types": [
+        "gravel",
+        "road"
+      ],
+      "start": "2027-05-28",
+      "end": "2027-05-30",
+      "place": "Hajnówka",
+      "region": "podlaskie",
+      "dist": "556 km, 383 km, 261 km, 274 km",
+      "tags": [
+
+      ],
+      "url": "https://ultraduchpuszczy.pl/",
+      "src": [
+        "kalendarzrowerowy.pl"
       ]
     },
     {
@@ -402,7 +538,8 @@
       "name": "Polish Bike Tour Góry 400",
       "types": [
         "gravel",
-        "road"
+        "road",
+        "mtb"
       ],
       "start": "2027-06-05",
       "end": "2027-06-09",
@@ -414,7 +551,8 @@
       ],
       "url": "https://www.polishbiketour.pl/wydarzenia/gory-400-zywiec-05-06-2027",
       "src": [
-        "gravelradar.cc"
+        "gravelradar.cc",
+        "kalendarzrowerowy.pl"
       ]
     },
     {
@@ -490,6 +628,24 @@
       ]
     },
     {
+      "name": "Pogranicza Gravel 2027",
+      "types": [
+        "gravel"
+      ],
+      "start": "2027-06-26",
+      "end": "2027-06-26",
+      "place": "Radziejów",
+      "region": "kujawsko-pomorskie",
+      "dist": "150 / 230 / 300 km",
+      "tags": [
+
+      ],
+      "url": "https://pograniczagravel.pl/",
+      "src": [
+        "gravelradar.cc"
+      ]
+    },
+    {
       "name": "Robinsonada Dolnośląska",
       "types": [
         "gravel"
@@ -504,7 +660,8 @@
       ],
       "url": "https://robinsonada.com.pl/",
       "src": [
-        "gravelradar.cc"
+        "gravelradar.cc",
+        "kalendarzrowerowy.pl"
       ]
     },
     {
@@ -523,7 +680,8 @@
       ],
       "url": "https://www.polishbiketour.pl/wydarzenia/wschod-1200-sanok-03-07-2027",
       "src": [
-        "gravelradar.cc"
+        "gravelradar.cc",
+        "kalendarzrowerowy.pl"
       ]
     },
     {
@@ -545,6 +703,42 @@
       ]
     },
     {
+      "name": "Wisła 1200 2027 — 10. edycja",
+      "types": [
+        "gravel"
+      ],
+      "start": "2027-07-04",
+      "end": "2027-07-11",
+      "place": "Wisła",
+      "region": "śląskie",
+      "dist": "1200 km",
+      "tags": [
+        "ultra"
+      ],
+      "url": "https://kolarstwoprzygodowe.pl/wisla-1200/",
+      "src": [
+        "gravelradar.cc"
+      ]
+    },
+    {
+      "name": "Wisełka 500 2027",
+      "types": [
+        "gravel"
+      ],
+      "start": "2027-07-08",
+      "end": "2027-07-11",
+      "place": "Warszawa",
+      "region": "mazowieckie",
+      "dist": "500 km",
+      "tags": [
+        "ultra"
+      ],
+      "url": "https://kolarstwoprzygodowe.pl/wiselka-500/",
+      "src": [
+        "gravelradar.cc"
+      ]
+    },
+    {
       "name": "Brejdak Gravel",
       "types": [
         "gravel"
@@ -559,7 +753,8 @@
       ],
       "url": "https://brejdakgravel.pl/",
       "src": [
-        "gravelradar.cc"
+        "gravelradar.cc",
+        "kalendarzrowerowy.pl"
       ]
     },
     {
@@ -577,7 +772,8 @@
       ],
       "url": "https://gravelbeskidzki.pl/",
       "src": [
-        "gravelradar.cc"
+        "gravelradar.cc",
+        "kalendarzrowerowy.pl"
       ]
     },
     {
@@ -594,6 +790,25 @@
 
       ],
       "url": "https://graveliada.pl/",
+      "src": [
+        "gravelradar.cc",
+        "kalendarzrowerowy.pl"
+      ]
+    },
+    {
+      "name": "Wataha Ultra Race - Koza 2027",
+      "types": [
+        "gravel"
+      ],
+      "start": "2027-07-16",
+      "end": "2027-07-19",
+      "place": "Skarżysko-Kamienna",
+      "region": "świętokrzyskie",
+      "dist": null,
+      "tags": [
+
+      ],
+      "url": "https://watahaultrarace.pl/",
       "src": [
         "gravelradar.cc"
       ]
@@ -613,7 +828,8 @@
       ],
       "url": "https://hardygravel.cc/rajdy/",
       "src": [
-        "gravelradar.cc"
+        "gravelradar.cc",
+        "kalendarzrowerowy.pl"
       ]
     },
     {
@@ -671,7 +887,7 @@
       ]
     },
     {
-      "name": "Letnie Szutry P*****m",
+      "name": "Letnie Szutry Premium",
       "types": [
         "gravel"
       ],
@@ -686,6 +902,25 @@
       "url": "https://szutrypremium.pl/",
       "src": [
         "gravelradar.cc"
+      ]
+    },
+    {
+      "name": "PBT Wybrzeże 500",
+      "types": [
+        "gravel",
+        "mtb"
+      ],
+      "start": "2027-07-31",
+      "end": "2027-07-31",
+      "place": "Sopot",
+      "region": "pomorskie",
+      "dist": "500 km",
+      "tags": [
+
+      ],
+      "url": "https://www.polishbiketour.pl/pbt-news/zapisy-na-sezon-2027",
+      "src": [
+        "kalendarzrowerowy.pl"
       ]
     },
     {
@@ -704,7 +939,8 @@
       ],
       "url": "https://www.polishbiketour.pl/wydarzenia/baltyk-600-gdansk-szczecin-31-07-2027",
       "src": [
-        "gravelradar.cc"
+        "gravelradar.cc",
+        "kalendarzrowerowy.pl"
       ]
     },
     {
@@ -758,7 +994,8 @@
       ],
       "url": "https://wartagravel.com/",
       "src": [
-        "gravelradar.cc"
+        "gravelradar.cc",
+        "kalendarzrowerowy.pl"
       ]
     },
     {
@@ -834,7 +1071,7 @@
       ]
     },
     {
-      "name": "Jesienne Szutry P*****m",
+      "name": "Jesienne Szutry Premium",
       "types": [
         "gravel"
       ],
@@ -908,7 +1145,8 @@
     {
       "name": "PBT: Rozjazd 2027",
       "types": [
-        "gravel"
+        "gravel",
+        "road"
       ],
       "start": "2027-10-02",
       "end": "2027-10-02",
@@ -920,7 +1158,8 @@
       ],
       "url": "https://www.polishbiketour.pl/",
       "src": [
-        "gravelradar.cc"
+        "gravelradar.cc",
+        "kalendarzrowerowy.pl"
       ]
     },
     {
@@ -937,6 +1176,24 @@
 
       ],
       "url": "https://robinsonada.com.pl/",
+      "src": [
+        "gravelradar.cc"
+      ]
+    },
+    {
+      "name": "Wataha Ultra Race - Droga do Piekła 2027",
+      "types": [
+        "gravel"
+      ],
+      "start": "2027-10-22",
+      "end": "2027-10-25",
+      "place": "Skarżysko-Kamienna",
+      "region": "świętokrzyskie",
+      "dist": null,
+      "tags": [
+
+      ],
+      "url": "https://watahaultrarace.pl/",
       "src": [
         "gravelradar.cc"
       ]
