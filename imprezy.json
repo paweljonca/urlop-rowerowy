@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02",
+  "updated": "2026-11-03",
   "events": [
     {
       "name": "Brevet Niepodległa",
@@ -220,6 +220,24 @@
       ]
     },
     {
+      "name": "VELO Kampinos 2027 - II edycja",
+      "types": [
+        "gravel"
+      ],
+      "start": "2027-04-17",
+      "end": "2027-04-17",
+      "place": "do ustalenia",
+      "region": "mazowieckie",
+      "dist": null,
+      "tags": [
+
+      ],
+      "url": null,
+      "src": [
+        "gravelradar.cc"
+      ]
+    },
+    {
       "name": "Wiosenne Szutry Premium",
       "types": [
         "gravel"
@@ -272,6 +290,24 @@
       "src": [
         "gravelradar.cc",
         "kalendarzrowerowy.pl"
+      ]
+    },
+    {
+      "name": "GravOn Along the River 2027",
+      "types": [
+        "gravel"
+      ],
+      "start": "2027-05-01",
+      "end": "2027-05-04",
+      "place": "do potwierdzenia",
+      "region": "śląskie",
+      "dist": null,
+      "tags": [
+
+      ],
+      "url": "https://www.gravon.pl/racing/gravon-atr",
+      "src": [
+        "gravelradar.cc"
       ]
     },
     {
@@ -530,6 +566,24 @@
 
       ],
       "url": "https://wanogagravel.pl/",
+      "src": [
+        "gravelradar.cc"
+      ]
+    },
+    {
+      "name": "Baranek Gravel 2027",
+      "types": [
+        "gravel"
+      ],
+      "start": "2027-06-05",
+      "end": "2027-06-05",
+      "place": "Tarczyn",
+      "region": "mazowieckie",
+      "dist": "120 km",
+      "tags": [
+
+      ],
+      "url": "https://baranekgravel.bckl.cc/",
       "src": [
         "gravelradar.cc"
       ]
