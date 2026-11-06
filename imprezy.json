@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05",
+  "updated": "2026-11-06",
   "events": [
     {
       "name": "Brevet Niepodległa",
@@ -1034,6 +1034,24 @@
       ]
     },
     {
+      "name": "Bury Miś Gravel 2027",
+      "types": [
+        "gravel"
+      ],
+      "start": "2027-08-20",
+      "end": "2027-08-22",
+      "place": "Nowy Klincz",
+      "region": "pomorskie",
+      "dist": "50 / 100 / 200 / 400 km",
+      "tags": [
+        "ultra"
+      ],
+      "url": "https://www.bikeowewyprawy.pl/",
+      "src": [
+        "gravelradar.cc"
+      ]
+    },
+    {
       "name": "Warta Gravel 2027",
       "types": [
         "gravel"
@@ -1107,7 +1125,7 @@
       ]
     },
     {
-      "name": "Orient Gravel – Augustów „Kanał Augustowski” 2027",
+      "name": "Orient Gravel – Augustów „Kanał Augustowski”",
       "types": [
         "gravel"
       ],
