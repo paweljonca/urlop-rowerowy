@@ -1,42 +1,6 @@
 {
-  "updated": "2026-11-07",
+  "updated": "2026-11-08",
   "events": [
-    {
-      "name": "Brevet Niepodległa",
-      "types": [
-        "gravel"
-      ],
-      "start": "2026-11-07",
-      "end": "2026-11-07",
-      "place": "Kórnik",
-      "region": "wielkopolskie",
-      "dist": "108 km, 45 km",
-      "tags": [
-
-      ],
-      "url": "https://fb.me/e/6KgT6E81u",
-      "src": [
-        "kalendarzrowerowy.pl"
-      ]
-    },
-    {
-      "name": "Castle Race - Jesień 2026",
-      "types": [
-        "gravel"
-      ],
-      "start": "2026-11-07",
-      "end": "2026-11-07",
-      "place": "Pomiechówek",
-      "region": "mazowieckie",
-      "dist": null,
-      "tags": [
-        "ultra"
-      ],
-      "url": "https://www.facebook.com/events/1621642333013011/?active_tab=about",
-      "src": [
-        "gravelradar.cc"
-      ]
-    },
     {
       "name": "Prószkowski Gravel Cup",
       "types": [
@@ -1013,6 +977,24 @@
       "src": [
         "gravelradar.cc",
         "kalendarzrowerowy.pl"
+      ]
+    },
+    {
+      "name": "Poland Gravel Race 2027",
+      "types": [
+        "gravel"
+      ],
+      "start": "2027-08-07",
+      "end": "2027-08-10",
+      "place": "Przemyśl",
+      "region": "podkarpackie",
+      "dist": "550 km",
+      "tags": [
+        "ultra"
+      ],
+      "url": "https://pgr.kolo-ultra.pl/",
+      "src": [
+        "gravelradar.cc"
       ]
     },
     {
