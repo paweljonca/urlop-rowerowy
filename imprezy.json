@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09",
+  "updated": "2026-11-10",
   "events": [
     {
       "name": "Prószkowski Gravel Cup",
@@ -70,6 +70,24 @@
 
       ],
       "url": "https://watahaultrarace.pl/",
+      "src": [
+        "gravelradar.cc"
+      ]
+    },
+    {
+      "name": "Robajk Vivaldi Gravel Zima 2027",
+      "types": [
+        "gravel"
+      ],
+      "start": "2027-02-07",
+      "end": "2027-02-07",
+      "place": "Zamorze",
+      "region": "wielkopolskie",
+      "dist": "40 / 71 km",
+      "tags": [
+
+      ],
+      "url": "https://robajk.pl/",
       "src": [
         "gravelradar.cc"
       ]
@@ -270,6 +288,24 @@
 
       ],
       "url": "https://www.gravon.pl/racing/gravon-atr",
+      "src": [
+        "gravelradar.cc"
+      ]
+    },
+    {
+      "name": "Gravelowa Korona Kujaw i Pomorza 2027 – Toruń",
+      "types": [
+        "gravel"
+      ],
+      "start": "2027-05-01",
+      "end": "2027-05-01",
+      "place": "Toruń",
+      "region": "kujawsko-pomorskie",
+      "dist": "77 / 157 / 257 km",
+      "tags": [
+
+      ],
+      "url": "https://www.festiwalrowerowy.com/",
       "src": [
         "gravelradar.cc"
       ]
@@ -664,6 +700,24 @@
       ]
     },
     {
+      "name": "Gravelowa Korona Kujaw i Pomorza 2027 – Grudziądz",
+      "types": [
+        "gravel"
+      ],
+      "start": "2027-06-26",
+      "end": "2027-06-26",
+      "place": "Grudziądz",
+      "region": "kujawsko-pomorskie",
+      "dist": "77 / 157 / 257 km",
+      "tags": [
+
+      ],
+      "url": "https://www.festiwalrowerowy.com/",
+      "src": [
+        "gravelradar.cc"
+      ]
+    },
+    {
       "name": "Pogranicza Gravel 2027",
       "types": [
         "gravel"
@@ -900,6 +954,24 @@
 
       ],
       "url": "https://ultraraceseries.pl/ultra-race-900/",
+      "src": [
+        "gravelradar.cc"
+      ]
+    },
+    {
+      "name": "Gravelowa Korona Kujaw i Pomorza 2027 – Bydgoszcz",
+      "types": [
+        "gravel"
+      ],
+      "start": "2027-07-24",
+      "end": "2027-07-24",
+      "place": "Bydgoszcz",
+      "region": "kujawsko-pomorskie",
+      "dist": "77 / 157 / 257 km",
+      "tags": [
+
+      ],
+      "url": "https://www.festiwalrowerowy.com/",
       "src": [
         "gravelradar.cc"
       ]
