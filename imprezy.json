@@ -1,24 +1,6 @@
 {
-  "updated": "2026-11-11",
+  "updated": "2026-11-12",
   "events": [
-    {
-      "name": "Prószkowski Gravel Cup",
-      "types": [
-        "gravel"
-      ],
-      "start": "2026-11-11",
-      "end": "2026-11-11",
-      "place": "Prószków",
-      "region": "opolskie",
-      "dist": "60 / 120 km",
-      "tags": [
-
-      ],
-      "url": "https://tomexgravel.pl/kontakt",
-      "src": [
-        "gravelradar.cc"
-      ]
-    },
     {
       "name": "Przeciskacz - Piękny Yeti",
       "types": [
