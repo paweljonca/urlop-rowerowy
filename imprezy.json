@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-25",
+  "updated": "2026-11-26",
   "events": [
     {
       "name": "Przeciskacz - Piękny Yeti",
@@ -423,7 +423,7 @@
       ]
     },
     {
-      "name": "Przemyśl Gravel Tour",
+      "name": "Przemyśl Gravel Tour 2027",
       "types": [
         "gravel"
       ],
@@ -431,12 +431,13 @@
       "end": "2027-05-22",
       "place": "Przemyśl",
       "region": "podkarpackie",
-      "dist": "80 km, 131 km, 206 km",
+      "dist": "80 / 130 / 204 km",
       "tags": [
 
       ],
-      "url": "https://gravel.przemysltour.pl",
+      "url": "https://gravel.przemysltour.pl/",
       "src": [
+        "gravelradar.cc",
         "kalendarzrowerowy.pl"
       ]
     },
